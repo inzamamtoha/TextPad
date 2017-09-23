@@ -3,7 +3,82 @@
   <component name="ChangeListManager">
     <list default="true" id="9b416a0b-b504-4532-8ed7-139a384a9563" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Naditor.xml" afterPath="$PROJECT_DIR$/.idea/libraries/TextPad.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/Copy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/Cut.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/Edit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/Editor$WordInDocument.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/Editor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/Intellisense.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/Open in Browser.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/Paste.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/Save.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/Settings 3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/Support.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/TextPad.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/Undo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/new.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/night.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/open.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/Copy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/Cut.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/Delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/Edit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/Open in Browser.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/Paste.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/Print.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/Redo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/Run.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/Save.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/SaveAll.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/Settings 3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/Undo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/assemble.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/editor_style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/full_screen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/full_screen_off.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/menu_style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/new.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/open.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/toolbar_style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/Copy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/Cut.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/Delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/Edit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/Open in Browser.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/Paste.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/Print.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/Redo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/Run.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/Save.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/SaveAll.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/Settings 3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/Undo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/assemble.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/editor_style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/full_screen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/full_screen_off.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/menu_style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/new.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/open.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/toolbar_style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/Copy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/Cut.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/Edit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/Editor$WordInDocument.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/Editor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/Intellisense.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/Open in Browser.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/Paste.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/Save.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/Settings 3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/Support.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/TextPad.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/Undo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/new.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/night.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/open.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -95,17 +170,6 @@
             <path>
               <item name="TextPad" type="b2602c69:ProjectViewProjectNode" />
               <item name="TextPad" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TextPad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TextPad" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TextPad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TextPad" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="libraries" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TextPad" type="b2602c69:ProjectViewProjectNode" />
@@ -278,12 +342,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1506089798659</updated>
-      <workItem from="1506089805163" duration="5705000" />
+      <workItem from="1506089805163" duration="6390000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5705000" />
+    <option name="totallyTimeSpent" value="6390000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="0" />
@@ -297,12 +361,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -313,7 +378,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
