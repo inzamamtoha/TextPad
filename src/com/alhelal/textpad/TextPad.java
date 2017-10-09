@@ -421,7 +421,7 @@ public class TextPad extends Application {
     private void saveFile() {
         FileChooser savefile = new FileChooser();
         savefile.setTitle("Open File");
-        savefile.getExtensionFilters().add(new FileChooser.ExtensionFilter("Assembly Files", "*.asm"));
+        //savefile.getExtensionFilters().add(new FileChooser.ExtensionFilter("Assembly Files", "*.asm"));
         //I change this portion
         File file = savefile.showSaveDialog(stage);
         // Set the new title of the window
@@ -430,12 +430,13 @@ public class TextPad extends Application {
         try {
             //BufferedWriter out = new BufferedWriter(new FileWriter(file.getPath()));
             FileWriter fileWriter = new FileWriter(new File(file.getPath()));
-            // Write the contents of the TextArea to the file
-            String text = new String();
-            text = output.getText();
-            System.out.println("this from textArea = " + text);
-            fileWriter.write(text);
+            //System.out.println(file.getPath());
+            // Write the contents of the CodeArea to the file
+            centerPane.getSelectionModel().getSelectedItem().setText(file.getName());
+            output = getCodeAreaFromTab(centerPane.getSelectionModel().getSelectedItem());
+            fileWriter.write(output.getText());
             // Close the file stream
+            fileWriter.flush();
             fileWriter.close();
         }
         catch (IOException e)

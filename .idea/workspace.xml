@@ -2,84 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b416a0b-b504-4532-8ed7-139a384a9563" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/TextPad.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/Copy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/Cut.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/Edit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/Editor$WordInDocument.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/Editor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/Intellisense.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/Open in Browser.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/Paste.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/Save.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/Settings 3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/Support.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/TextPad.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/Undo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/new.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/night.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/naditor/open.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/Copy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/Cut.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/Delete.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/Edit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/Open in Browser.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/Paste.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/Print.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/Redo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/Run.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/Save.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/SaveAll.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/Settings 3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/Undo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/assemble.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/editor_style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/full_screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/full_screen_off.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/menu_style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/new.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/open.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/search.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Naditor/com/tahsinsayeed/resource/toolbar_style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/Copy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/Cut.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/Delete.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/Edit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/Open in Browser.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/Paste.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/Print.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/Redo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/Run.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/Save.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/SaveAll.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/Settings 3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/Undo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/assemble.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/editor_style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/full_screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/full_screen_off.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/menu_style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/new.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/open.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/search.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/resource/toolbar_style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/Copy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/Cut.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/Edit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/Editor$WordInDocument.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/Editor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/Intellisense.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/Open in Browser.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/Paste.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/Save.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/Settings 3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/Support.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/TextPad.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/Undo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/new.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/night.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextPad/com/alhelal/textpad/open.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/alhelal/textpad/Intellisense.java" afterPath="$PROJECT_DIR$/src/com/alhelal/textpad/Intellisense.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/alhelal/textpad/TextPad.java" afterPath="$PROJECT_DIR$/src/com/alhelal/textpad/TextPad.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,11 +17,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Editor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/Editor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1386">
+            <state relative-caret-position="-657">
               <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
               <folding>
                 <element signature="e#0#6968#0" expanded="true" />
@@ -106,8 +33,8 @@
       <file leaf-file-name="Intellisense.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/Intellisense.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            <state relative-caret-position="-1449">
+              <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -116,9 +43,12 @@
       <file leaf-file-name="TextPad.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/TextPad.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="438" column="22" lean-forward="false" selection-start-line="438" selection-start-column="22" selection-end-line="438" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="-918">
+              <caret line="278" column="8" lean-forward="false" selection-start-line="278" selection-start-column="8" selection-end-line="278" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#17870#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -148,6 +78,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="34" />
+    <option name="width" value="1366" />
+    <option name="height" value="744" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -163,6 +98,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -170,6 +108,50 @@
             <path>
               <item name="TextPad" type="b2602c69:ProjectViewProjectNode" />
               <item name="TextPad" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TextPad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TextPad" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TextPad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TextPad" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TextPad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TextPad" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="RichText.jar" type="ab9368bb:PsiFileNode" />
+            </path>
+            <path>
+              <item name="TextPad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TextPad" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="RichText.jar" type="ab9368bb:PsiFileNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TextPad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TextPad" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="RichText.jar" type="ab9368bb:PsiFileNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="fxmisc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TextPad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TextPad" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="RichText.jar" type="ab9368bb:PsiFileNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="reactfx" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TextPad" type="b2602c69:ProjectViewProjectNode" />
@@ -200,15 +182,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="SearchEverywhereHistoryKey" value="saveF&#9;PSI&#9;JAVA://com.alhelal.textpad.TextPad#saveFile&#10;savef&#9;PSI&#9;JAVA://com.alhelal.textpad.TextPad#saveFile" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -342,43 +322,55 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1506089798659</updated>
-      <workItem from="1506089805163" duration="6390000" />
+      <workItem from="1506089805163" duration="7592000" />
+      <workItem from="1506260295885" duration="266000" />
+      <workItem from="1506260752122" duration="438000" />
+      <workItem from="1506343259248" duration="3706000" />
+      <workItem from="1506415117832" duration="3427000" />
+      <workItem from="1507024602744" duration="87000" />
+      <workItem from="1507024915410" duration="873000" />
+      <workItem from="1507037810763" duration="1609000" />
+      <workItem from="1507441065292" duration="2253000" />
+      <workItem from="1507446494803" duration="43000" />
+      <workItem from="1507446700537" duration="812000" />
+      <workItem from="1507543486259" duration="6490000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6390000" />
+    <option name="totallyTimeSpent" value="27596000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="744" extended-state="0" />
+    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3153153" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,6 +384,190 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/Editor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#6968#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/Intellisense.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/TextPad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7002">
+          <caret line="434" column="7" lean-forward="false" selection-start-line="434" selection-start-column="7" selection-end-line="434" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#17870#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/Editor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#6968#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/Intellisense.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/TextPad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7704">
+          <caret line="434" column="7" lean-forward="false" selection-start-line="434" selection-start-column="7" selection-end-line="434" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#17870#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/Editor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#6968#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/Intellisense.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/TextPad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7812">
+          <caret line="434" column="7" lean-forward="true" selection-start-line="434" selection-start-column="7" selection-end-line="434" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#17870#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/Editor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#6968#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/Intellisense.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/TextPad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7416">
+          <caret line="457" column="13" lean-forward="false" selection-start-line="457" selection-start-column="13" selection-end-line="457" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#17870#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/Editor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#6968#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/Intellisense.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/TextPad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8226">
+          <caret line="457" column="13" lean-forward="false" selection-start-line="457" selection-start-column="13" selection-end-line="457" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#17870#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/Editor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#6968#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/TextPad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8226">
+          <caret line="457" column="13" lean-forward="true" selection-start-line="457" selection-start-column="13" selection-end-line="457" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#17870#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/Intellisense.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/Editor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#6968#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/Intellisense.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -400,12 +576,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/TextPad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7884">
+          <caret line="438" column="22" lean-forward="false" selection-start-line="438" selection-start-column="22" selection-end-line="438" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#17870#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/Editor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1386">
+        <state relative-caret-position="396">
           <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
           <folding>
             <element signature="e#0#6968#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/Intellisense.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/TextPad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7884">
+          <caret line="438" column="22" lean-forward="false" selection-start-line="438" selection-start-column="22" selection-end-line="438" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#17870#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/Editor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#6968#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/Intellisense.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/TextPad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7884">
+          <caret line="438" column="22" lean-forward="false" selection-start-line="438" selection-start-column="22" selection-end-line="438" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#17870#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/Editor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#6968#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/Intellisense.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/TextPad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7884">
+          <caret line="438" column="22" lean-forward="false" selection-start-line="438" selection-start-column="22" selection-end-line="438" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#17870#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -414,15 +678,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/Intellisense.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1449">
+          <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/Editor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-657">
+          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#6968#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/alhelal/textpad/TextPad.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="438" column="22" lean-forward="false" selection-start-line="438" selection-start-column="22" selection-end-line="438" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="-918">
+          <caret line="278" column="8" lean-forward="false" selection-start-line="278" selection-start-column="8" selection-end-line="278" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#17870#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

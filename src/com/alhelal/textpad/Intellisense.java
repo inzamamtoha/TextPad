@@ -23,7 +23,7 @@ public class Intellisense{
     private ListView<String> lstIntelliSense;
     private ObservableList<String> keywords = FXCollections.observableArrayList(
             "mov", "jmp", "add", "sub", "adc", "sbb", "div", "idiv", "mul", "imul",
-            "loop", "ret", "push", "pop"
+            "loop", "ret", "push", "pop", "double", "float", "for", "int", "String", "while"
             );
     private Boolean showing;
     public Intellisense(String s)
