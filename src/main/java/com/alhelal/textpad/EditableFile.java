@@ -35,6 +35,7 @@ public abstract class EditableFile
     }
     public void saveFile()
     {
+        System.out.println("in saveFile");
         FileChooser savefile = new FileChooser();
         savefile.setTitle("Open File");
         //savefile.getExtensionFilters().add(new FileChooser.ExtensionFilter("Assembly Files", "*.asm"));
@@ -98,9 +99,9 @@ public abstract class EditableFile
         languageBehavior = langBehavior;
     }
 
-    public void performRunCode()
+    public void performRunCode(String path)
     {
-        languageBehavior.runCode();
+        languageBehavior.runCode(path);
     }
 
     public void performBuildCode()

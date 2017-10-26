@@ -3,7 +3,7 @@ package com.alhelal.textpad;
 public class CplusLanguageBehavior implements LanguageBehavior
 {
 
-    public void runCode()
+    public void runCode(String path)
     {
         System.out.println("Compiling C++ file");
     }

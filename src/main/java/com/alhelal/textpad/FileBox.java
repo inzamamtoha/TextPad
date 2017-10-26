@@ -7,10 +7,10 @@ public class FileBox
     {
         this.simpleFileFactory = simpleFileFactory;
     }
-    public EditableFile orderFile(String extension)
+    public EditableFile orderFile(String path)
     {
         EditableFile editableFile;
-        editableFile = simpleFileFactory.createFile(extension);
+        editableFile = simpleFileFactory.createFile(path);
         return editableFile;
     }
 }

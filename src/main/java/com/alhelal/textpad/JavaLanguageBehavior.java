@@ -2,7 +2,7 @@ package com.alhelal.textpad;
 
 public class JavaLanguageBehavior implements LanguageBehavior
 {
-    public void runCode()
+    public void runCode(String path)
     {
         System.out.println("Compiling Java file");
     }

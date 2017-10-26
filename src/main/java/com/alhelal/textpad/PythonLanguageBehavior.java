@@ -2,7 +2,7 @@ package com.alhelal.textpad;
 
 public class PythonLanguageBehavior implements LanguageBehavior
 {
-    public void runCode()
+    public void runCode(String path)
     {
         System.out.println("Compiling Python file");
     }

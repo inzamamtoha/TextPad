@@ -3,7 +3,7 @@ package com.alhelal.textpad;
 public class TextFileBehavior implements LanguageBehavior
 {
     @Override
-    public void runCode()
+    public void runCode(String path)
     {
         System.out.println("I am text file. No need to compile");
     }

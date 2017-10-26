@@ -1,9 +1,12 @@
 package com.alhelal.textpad;
 
+import org.apache.commons.io.FilenameUtils;
+
 public class SimpleFileFactory
 {
-    public EditableFile createFile(String extension)
+    public EditableFile createFile(String path)
     {
+        String extension = FilenameUtils.getExtension(path);
         EditableFile editableFile = null;
                 if (extension.equals("java"))
                 {

@@ -32,6 +32,7 @@ import java.nio.file.Paths;
  */
 public class TextPad extends Application
 {
+    String path;
     private Options options;
     private EditableFile editableFile;
 
@@ -48,7 +49,7 @@ public class TextPad extends Application
         options.btnFullScreen.setOnAction(evt -> toggleFullScreen());
         options.btnOpen.setOnAction(evt -> openFile());
         options.btnSave.setOnAction(evt -> editableFile.saveFile());
-        options.btnRun.setOnAction(evt -> editableFile.performRunCode());
+        options.btnRun.setOnAction(evt -> editableFile.performRunCode(path));
         options.menuPrint.setOnAction(evt -> editableFile.printFile(new TextArea(editableFile.getCodeAreaFromTab(
                 options.centerPane.getSelectionModel().getSelectedItem()).getText())));
 
@@ -130,14 +131,15 @@ public class TextPad extends Application
         openfile.setTitle("Open File");
         //openfile.getExtensionFilters().add(new FileChooser.ExtensionFilter("Assembly Files", "*.asm"));
         File file = openfile.showOpenDialog(options.stage);
+        String path = file.getPath();
         if (file != null)
         {
             CodeArea cd = editableFile.getCodeAreaFromTab(options.centerPane.getSelectionModel().getSelectedItem());
-            //cd.replaceText(FileUtils.readFiletoString(new File(file.getPath()), "UTF-8"));
+            //cd.replaceText(FileUtils.readFiletoString(new File(path), "UTF-8"));
 
             try
             {
-                cd.replaceText(new String(Files.readAllBytes(Paths.get(file.getPath()))));
+                cd.replaceText(new String(Files.readAllBytes(Paths.get(path))));
                 options.centerPane.getSelectionModel().getSelectedItem().setText(file.getName());
                 String name = file.getName();
                 //String[] splited;
@@ -145,11 +147,12 @@ public class TextPad extends Application
                 //= new String[2];
                 //splited = name.split(".");
                 //System.out.println("length =" + splited.length);
-                String extension = FilenameUtils.getExtension(name);
+                //String extension = FilenameUtils.getExtension(name);
                 //splited[0];
                 SimpleFileFactory simpleFileFactory = new SimpleFileFactory();
                 FileBox fileBox = new FileBox(simpleFileFactory);
-                editableFile = fileBox.orderFile(extension);
+                this.path = path;
+                editableFile = fileBox.orderFile(path);
 
                 //editableFile = new FileBox(simpleFileFactory);
 
