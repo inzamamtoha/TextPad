@@ -4,6 +4,6 @@ public class PythonFile extends EditableFile
 {
     public PythonFile()
     {
-        languageBehavior = new PythonLanguageBehavior();
+        languageBehavior = PythonLanguageBehavior.getUniqueInstance();
     }
 }

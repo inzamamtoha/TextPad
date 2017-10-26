@@ -2,8 +2,8 @@ package com.alhelal.textpad;
 
 public class JavaFile extends EditableFile
 {
-    public  JavaFile()
+    public JavaFile()
     {
-        languageBehavior = new JavaLanguageBehavior();
+        languageBehavior = JavaLanguageBehavior.getUniqueInstance();
     }
 }

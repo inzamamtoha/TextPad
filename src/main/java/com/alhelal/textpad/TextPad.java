@@ -13,26 +13,22 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.Tooltip;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import org.apache.commons.io.FileUtils;
 import org.fxmisc.flowless.VirtualizedScrollPane;
 import org.fxmisc.richtext.CodeArea;
-import java.io.IOException;
-//import java.nio.file.Files;
-//import java.nio.file.Paths;
-import org.apache.commons.io.FilenameUtils;
-import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+//import java.nio.file.Files;
+//import java.nio.file.Paths;
+
 /**
- *
  * @author alhelal
  */
 public class TextPad extends Application
 {
-    String path;
+    File file;
     private Options options;
     private EditableFile editableFile;
 
@@ -43,13 +39,21 @@ public class TextPad extends Application
 
     }
 
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args)
+    {
+        launch(args);
+    }
+
     public void start(Stage primaryStage)
     {
         options.btnNew.setOnAction(evt -> newFile(primaryStage));
         options.btnFullScreen.setOnAction(evt -> toggleFullScreen());
         options.btnOpen.setOnAction(evt -> openFile());
         options.btnSave.setOnAction(evt -> editableFile.saveFile());
-        options.btnRun.setOnAction(evt -> editableFile.performRunCode(path));
+        options.btnRun.setOnAction(evt -> editableFile.performRunCode(file));
         options.menuPrint.setOnAction(evt -> editableFile.printFile(new TextArea(editableFile.getCodeAreaFromTab(
                 options.centerPane.getSelectionModel().getSelectedItem()).getText())));
 
@@ -76,14 +80,6 @@ public class TextPad extends Application
         //primaryStage.setOnHiding(evt -> intellisense.hide());
     }
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args)
-    {
-        launch(args);
-    }
-
     private Tab addTab(Stage primaryStage)
     {
 
@@ -92,7 +88,9 @@ public class TextPad extends Application
                 new VirtualizedScrollPane<CodeArea>(ed.getEditArea()));
         tb.setOnSelectionChanged((Event event) -> {
             if (tb.isSelected())
+            {
                 editableFile.getCodeAreaFromTab(tb).requestFocus();
+            }
         });
 
 
@@ -151,8 +149,8 @@ public class TextPad extends Application
                 //splited[0];
                 SimpleFileFactory simpleFileFactory = new SimpleFileFactory();
                 FileBox fileBox = new FileBox(simpleFileFactory);
-                this.path = path;
-                editableFile = fileBox.orderFile(path);
+                this.file = file;
+                editableFile = fileBox.orderFile(file);
 
                 //editableFile = new FileBox(simpleFileFactory);
 
@@ -169,11 +167,11 @@ public class TextPad extends Application
                     editableFile = new PythonFile();
                 else
                     editableFile = new TextFile(options);*/
-            // / editableFile.setLanguageBehavior(new JavaLanguageBehavior());
-        }
+                // / editableFile.setLanguageBehavior(new JavaLanguageBehavior());
+            }
             catch (Exception io)
             {
-             //   System.out.println(io);
+                //   System.out.println(io);
             }
 
             //CodeArea cd = new CodeArea();

@@ -17,6 +17,7 @@ public abstract class EditableFile
 {
     public LanguageBehavior languageBehavior;
     public Options options;
+
     public EditableFile(Options option)
     {
         options = option;
@@ -30,9 +31,10 @@ public abstract class EditableFile
     public CodeArea getCodeAreaFromTab(Tab tb)
     {
         Node nd = tb.getContent();
-        VirtualizedScrollPane<CodeArea> cd = (VirtualizedScrollPane<CodeArea>)(nd);
+        VirtualizedScrollPane<CodeArea> cd = (VirtualizedScrollPane<CodeArea>) (nd);
         return cd.getContent();
     }
+
     public void saveFile()
     {
         System.out.println("in saveFile");
@@ -80,9 +82,9 @@ public abstract class EditableFile
         }
     }
 
-   public void toggleLineNumber(CodeArea cd)
+    public void toggleLineNumber(CodeArea cd)
     {
-        if(options.lineNumber)
+        if (options.lineNumber)
         {
             cd.setParagraphGraphicFactory(null);
             options.lineNumber = false;
@@ -99,14 +101,14 @@ public abstract class EditableFile
         languageBehavior = langBehavior;
     }
 
-    public void performRunCode(String path)
+    public void performRunCode(File file)
     {
-        languageBehavior.runCode(path);
+        languageBehavior.runCode(file);
     }
 
-    public void performBuildCode()
+    public void performBuildCode(File file)
     {
-        languageBehavior.buildCode();
+        languageBehavior.buildCode(file);
     }
 
     public void performSetHighlightableText()

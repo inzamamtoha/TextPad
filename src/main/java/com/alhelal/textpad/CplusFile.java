@@ -4,6 +4,6 @@ public class CplusFile extends EditableFile
 {
     public CplusFile()
     {
-        languageBehavior = new CLanguageBehavior();
+        languageBehavior = CLanguageBehavior.getUniqueInstance();
     }
 }
