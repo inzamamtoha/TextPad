@@ -8,12 +8,14 @@ import java.io.IOException;
 public class CLanguageBehavior implements LanguageBehavior
 {
     public volatile static CLanguageBehavior uniqueInstance;
+
     private CLanguageBehavior()
     {
     }
+
     public static CLanguageBehavior getUniqueInstance()
     {
-        if(uniqueInstance == null)
+        if (uniqueInstance == null)
         {
             synchronized (CLanguageBehavior.class)
             {
@@ -35,7 +37,9 @@ public class CLanguageBehavior implements LanguageBehavior
         System.out.println("objectFilePath = " + objectFilePath);
         try
         {
-            Runtime.getRuntime().exec(objectFilePath);
+            //Runtime.getRuntime().exec(objectFilePath);
+            Runtime.getRuntime().exec("./a.out");
+            System.out.println("run successed");
         }
         catch (IOException io)
         {
@@ -49,7 +53,7 @@ public class CLanguageBehavior implements LanguageBehavior
         String filePath = file.getPath();
         String fileName = file.getName();
         String objectFileName = FilenameUtils.removeExtension(fileName);
-        String command = "gcc " + filePath + " -o " + dirname + "/" + objectFileName;
+        String command = "gcc " + filePath;// + " -o " + dirname + "/" + objectFileName;
         System.out.println("command = " + command);
         try
         {

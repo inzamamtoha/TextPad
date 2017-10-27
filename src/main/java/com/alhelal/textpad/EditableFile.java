@@ -12,22 +12,12 @@ import org.fxmisc.richtext.LineNumberFactory;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 
-public abstract class EditableFile
+public class EditableFile
 {
     public LanguageBehavior languageBehavior;
     public Options options;
-
-    public EditableFile(Options option)
-    {
-        options = option;
-    }
-
-    public EditableFile()
-    {
-    }
-
-
     public CodeArea getCodeAreaFromTab(Tab tb)
     {
         Node nd = tb.getContent();
@@ -35,28 +25,54 @@ public abstract class EditableFile
         return cd.getContent();
     }
 
-    public void saveFile()
+    public void saveFile(ArrayList<FileTab> fileTabArrayList, Options option)
     {
+        File file;
+        String filePath;
         System.out.println("in saveFile");
-        FileChooser savefile = new FileChooser();
-        savefile.setTitle("Open File");
         //savefile.getExtensionFilters().add(new FileChooser.ExtensionFilter("Assembly Files", "*.asm"));
         //I change this portion
         System.out.println("saveFile called");
-        Stage stage = new Stage();
-        File file = savefile.showSaveDialog(options.stage);
+        if (option == null)
+        {
+            System.out.println("Optin is null");
+        }
+        if (languageBehavior == null)
+        {
+            System.out.println("languageBehavior is null");
+        }
+        Tab tb = option.centerPane.getSelectionModel().getSelectedItem();
+        String fileName = option.centerPane.getSelectionModel().getSelectedItem().getText();
+        int i=0;
+        while (fileTabArrayList.get(i).tab.equals(tb) == false)
+        {
+            i++;
+        }
+        if(fileTabArrayList.get(i).filePath == null)
+        {
+            FileChooser savefile = new FileChooser();
+            savefile.setTitle("Open File");
+            Stage stage = new Stage();
+            file = savefile.showSaveDialog(stage);
+            filePath = file.getPath();
+            fileTabArrayList.get(i).filePath = filePath;
+            option.centerPane.getSelectionModel().getSelectedItem().setText(file.getName());
+        }
+        else
+        {
+            filePath = fileTabArrayList.get(i).filePath;
+        }
         // Set the new title of the window
         // setTitle(file.getName() + " | " + SimpleJavaTextEditor.NAME);
         // Create a buffered writer to write to a file
         try
         {
             //BufferedWriter out = new BufferedWriter(new FileWriter(file.getPath()));
-            FileWriter fileWriter = new FileWriter(new File(file.getPath()));
+            FileWriter fileWriter = new FileWriter(new File(filePath));
             //System.out.println(file.getPath());
             // Write the contents of the CodeArea to the file
-            options.centerPane.getSelectionModel().getSelectedItem().setText(file.getName());
-            options.output = getCodeAreaFromTab(options.centerPane.getSelectionModel().getSelectedItem());
-            fileWriter.write(options.output.getText());
+            option.output = getCodeAreaFromTab(option.centerPane.getSelectionModel().getSelectedItem());
+            fileWriter.write(option.output.getText());
             // Close the file stream
             fileWriter.flush();
             fileWriter.close();

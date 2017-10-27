@@ -5,12 +5,14 @@ import java.io.File;
 public class JavaLanguageBehavior implements LanguageBehavior
 {
     public volatile static JavaLanguageBehavior uniqueInstance;
+
     private JavaLanguageBehavior()
     {
     }
+
     public static JavaLanguageBehavior getUniqueInstance()
     {
-        if(uniqueInstance == null)
+        if (uniqueInstance == null)
         {
             synchronized (JavaLanguageBehavior.class)
             {
@@ -22,6 +24,7 @@ public class JavaLanguageBehavior implements LanguageBehavior
         }
         return uniqueInstance;
     }
+
     public void runCode(File file)
     {
         System.out.println("Compiling Java file");

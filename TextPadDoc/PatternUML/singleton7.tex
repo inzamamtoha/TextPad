@@ -1,0 +1,51 @@
+\documentclass{standalone}
+\usepackage{pgf-umlcd}
+
+\begin{document}
+\begin{tikzpicture}
+
+  \begin{interface}[text width = 6cm]{LanguageBehavior}{0,0}
+    \attribute{$\sim$ com.alhelal.textpad}
+    \attribute{+ runCode(file : File)}
+    \attribute{+ buildCode(file : File)}
+    \attribute{+ setHighlightableText()}
+    \attribute{+ setAutoCompletableText()}
+  \end{interface}
+
+  \begin{class}[text width = 7cm, anchor = east, xshift=-6cm, yshift=0cm]{CLanguageBehavior}{LanguageBehavior.west}
+    \attribute{$\sim$ com.alhelal.textpad}
+    \implement{LanguageBehavior}
+    \attribute{+ uniqueInstance : CLanguageBehavior}
+    \operation{+ getUniqueInstance : CLanguageBehavior}
+  \end{class}
+
+  \begin{class}[text width = 8cm,anchor = north east, xshift = -6cm, yshift=-2cm]{CplusLanguageBehavior}{LanguageBehavior.south west}
+    \attribute{$\sim$ com.alhelal.textpad}
+    \implement{LanguageBehavior}
+    \attribute{+ uniqueInstance : CplusLanguageBehavior}
+    \operation{+ getUniqueInstance : CplusLanguageBehavior}
+  \end{class}
+
+  \begin{class}[text width = 8cm, yshift=-2cm, xshift = 0cm]{JavaLanguageBehavior}{LanguageBehavior.south}
+    \attribute{$\sim$ com.alhelal.textpad}
+    \implement{LanguageBehavior}
+    \attribute{+ uniqueInstance : JavaLanguageBehavior}
+    \operation{+ getUniqueInstance : JavaLanguageBehavior}
+  \end{class}
+
+  \begin{class}[text width = 8cm, anchor = north west, xshift = 6cm, yshift=-2cm]{PythonLanguageBehavior}{LanguageBehavior.south east}
+    \attribute{$\sim$ com.alhelal.textpad}
+    \implement{LanguageBehavior}
+    \attribute{+ uniqueInstance : PythonLanguageBehavior}
+    \operation{+ getUniqueInstance : PythonLanguageBehavior}
+  \end{class}
+
+  \begin{class}[text width = 8cm, anchor = west, xshift = 6cm]{LaTeXLanguageBehavior}{LanguageBehavior.east}
+    \attribute{$\sim$ com.alhelal.textpad}
+    \implement{LanguageBehavior}
+    \attribute{+ uniqueInstance : LaTeXLanguageBehavior}
+    \operation{+ getUniqueInstance : LaTeXLanguageBehavior}
+  \end{class}
+  \node [above=3mm] at (current bounding box.north){Strategy Pattern}
+\end{tikzpicture}
+\end{document}

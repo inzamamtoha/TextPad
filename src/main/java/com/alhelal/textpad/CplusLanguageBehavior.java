@@ -5,12 +5,14 @@ import java.io.File;
 public class CplusLanguageBehavior implements LanguageBehavior
 {
     public volatile static CplusLanguageBehavior uniqueInstance;
+
     private CplusLanguageBehavior()
     {
     }
+
     public static CplusLanguageBehavior getUniqueInstance()
     {
-        if(uniqueInstance == null)
+        if (uniqueInstance == null)
         {
             synchronized (CplusLanguageBehavior.class)
             {

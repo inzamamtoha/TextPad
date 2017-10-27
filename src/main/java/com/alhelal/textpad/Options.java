@@ -20,6 +20,8 @@ import org.fxmisc.richtext.CodeArea;
 public class Options
         //public class TextPad extends Application {
 {
+    public volatile static Options uniqueInstance;
+
     public final BorderPane mainPane;
     public final TabPane centerPane;
     public final ToolBar toolbar;
@@ -81,7 +83,7 @@ public class Options
     public boolean lineNumber;
 
     //    public TextPad() {
-    public Options()
+    private Options()
     {
         fullScreen = false;
         lineNumber = true;
@@ -294,5 +296,20 @@ public class Options
         mainPane.setBottom(bottomPane);
 
 
+    }
+
+    public static Options getUniqueInstance()
+    {
+        if (uniqueInstance == null)
+        {
+            synchronized (Options.class)
+            {
+                if (uniqueInstance == null)
+                {
+                    uniqueInstance = new Options();
+                }
+            }
+        }
+        return uniqueInstance;
     }
 }
