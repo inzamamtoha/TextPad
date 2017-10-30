@@ -2,8 +2,10 @@ package com.alhelal.textpad;
 
 import org.apache.commons.io.FilenameUtils;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class CLanguageBehavior implements LanguageBehavior
 {
@@ -34,11 +36,11 @@ public class CLanguageBehavior implements LanguageBehavior
         String objectFileName = FilenameUtils.removeExtension(file.getName());
         String objectFilePath = file.getParent() + "/" + objectFileName;
         buildCode(file);
-        System.out.println("objectFilePath = " + objectFilePath);
         try
         {
-            //Runtime.getRuntime().exec(objectFilePath);
-            Runtime.getRuntime().exec("./a.out");
+            Process process = Runtime.getRuntime().exec("./a.out");
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            System.out.println(bufferedReader.readLine());
             System.out.println("run successed");
         }
         catch (IOException io)
@@ -54,11 +56,17 @@ public class CLanguageBehavior implements LanguageBehavior
         String fileName = file.getName();
         String objectFileName = FilenameUtils.removeExtension(fileName);
         String command = "gcc " + filePath;// + " -o " + dirname + "/" + objectFileName;
-        System.out.println("command = " + command);
         try
         {
-            Process p = Runtime.getRuntime().exec(command);
-            System.out.println("Compiled C file");
+            Process process = Runtime.getRuntime().exec(command);
+            BufferedReader stdInput = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            BufferedReader stdErr = new BufferedReader(new InputStreamReader(process.getErrorStream()));
+            String compileResult;
+            while ((compileResult = stdInput.readLine()) != null)
+                System.out.println(compileResult);
+
+            while ((compileResult = stdErr.readLine()) != null)
+                System.out.println(compileResult);
         }
         catch (IOException io)
         {

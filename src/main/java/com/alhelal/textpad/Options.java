@@ -4,6 +4,8 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyCodeCombination;
 import javafx.scene.input.KeyCombination;
@@ -37,7 +39,7 @@ public class Options
     public final Button btnDelete;
     public final Button btnUndo;
     public final VBox topPane;
-    public final Button btnAssemble;
+    public final Button btnBuild;
     public final Button btnRun;
     public final ToggleButton btnFullScreen;
     public final Button btnRedo;
@@ -178,11 +180,20 @@ public class Options
         bottomPane = new VBox();
         bottomPane.setAlignment(Pos.CENTER);
         bottomPane.setStyle("-fx-width: 100%");
-
-        outputWindow = new TitledPane("Log",
+//TitledPane outputWindow
+        outputWindow = new TitledPane("Output",
                 new TextArea("Once upon a time \nthere many uninhabited lands"));
         outputWindow.setExpanded(false);
         outputWindow.setStyle("-fx-width: 100%");
+        outputWindow.setAnimated(false);
+        //outputWindow.setGraphic(new ImageView(new Image(getClass().getResource("output.png").toExternalForm(),5,5,true,true)));
+        //outputWindow.setContentDisplay(ContentDisplay.RIGHT);
+        //outputWindow.applyCss();
+        //outputWindow.layout();
+        //outputWindow.setPrefHeight(200);
+        //outputWindow.setOnDragDetected(event -> {
+         //   System.out.println("setOnDragDetected");outputWindow.setMaxHeight(600);});
+        //outputWindow.setOnMouseClicked(event -> {outputWindow.setLayoutY(-500);});
 
         StatusBar = new HBox();
         StatusBar.setPadding(new Insets(10, 10, 10, 10));
@@ -240,10 +251,10 @@ public class Options
         btnRedo.setPrefSize(28, 28);
         btnRedo.setTooltip(new Tooltip("Redo(Ctrl+Y)"));
 
-        btnAssemble = new Button();
-        btnAssemble.setId("assemble");
-        btnAssemble.setPrefSize(28, 28);
-        btnAssemble.setTooltip(new Tooltip("Assemble File(F10)"));
+        btnBuild = new Button();
+        btnBuild.setId("assemble");
+        btnBuild.setPrefSize(28, 28);
+        btnBuild.setTooltip(new Tooltip("Assemble File(F10)"));
 
         btnRun = new Button();
         btnRun.setId("run");
@@ -283,7 +294,7 @@ public class Options
         toolbar.getItems().addAll(btnNew, btnOpen, btnSave, btnSaveAll, new Separator(),
                 btnCopy, btnPaste, btnCut, btnDelete, new Separator(),
                 btnUndo, btnRedo, new Separator(),
-                btnAssemble, btnRun, new Separator(),
+                btnBuild, btnRun, new Separator(),
                 btnFullScreen, findBox, txtFind);
 
 

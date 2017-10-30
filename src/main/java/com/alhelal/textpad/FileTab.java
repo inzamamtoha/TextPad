@@ -8,6 +8,7 @@ public class FileTab
 {
     String filePath;
     Tab tab;
+    //EditableFile editableFile;
 
     public FileTab(String filePath, Tab tab)
     {
