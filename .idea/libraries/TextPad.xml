@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="Naditor">
+  <library name="TextPad">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/dist/Naditor.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/TextPad.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
