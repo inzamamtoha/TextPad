@@ -1,14 +1,15 @@
 package com.alhelal.textpad;
 
+import java.io.BufferedReader;
 import java.io.File;
 
 public interface LanguageBehavior
 {
-    public void runCode(File file);
+    BufferedReader runCode(File file);
 
-    public void buildCode(File file);
+    BufferedReader buildCode(File file);
 
-    public void setHighlightableText();
+    void setHighlightableText();
 
-    public void setAutoCompletableText();
+    void setAutoCompletableText();
 }

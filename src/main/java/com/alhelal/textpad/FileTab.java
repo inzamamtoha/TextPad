@@ -6,13 +6,16 @@ import java.io.File;
 
 public class FileTab
 {
-    String filePath;
+    File file;
     Tab tab;
-    //EditableFile editableFile;
+    Options options;
+    EditableFile editableFile;
 
-    public FileTab(String filePath, Tab tab)
+    public FileTab(File file, Tab tab, Options options, EditableFile editableFile)
     {
-        this.filePath = filePath;
+        this.file = file;
         this.tab = tab;
+        this.options = options;
+        this.editableFile = editableFile;
     }
 }

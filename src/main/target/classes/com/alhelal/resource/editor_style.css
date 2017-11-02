@@ -22,7 +22,7 @@
 }
 
 .comment {
-	-fx-fill: yellow;
+	-fx-fill: cadetblue;
 }
 
 .paragraph-box:has-caret {

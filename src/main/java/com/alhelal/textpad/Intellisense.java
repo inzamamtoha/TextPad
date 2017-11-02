@@ -22,8 +22,16 @@ public class Intellisense
     private VBox root;
     private ListView<String> lstIntelliSense;
     private ObservableList<String> keywords = FXCollections.observableArrayList(
-            "mov", "jmp", "add", "sub", "adc", "sbb", "div", "idiv", "mul", "imul",
-            "loop", "ret", "push", "pop", "double", "float", "for", "int", "String", "while"
+            "abstract", "assert", "boolean", "break", "byte",
+            "case", "catch", "char", "class", "const",
+            "continue", "default", "do", "double", "else",
+            "enum", "extends", "final", "finally", "float",
+            "for", "goto", "if", "implements", "import",
+            "instanceof", "int", "interface", "long", "native",
+            "new", "package", "private", "protected", "public",
+            "return", "short", "static", "strictfp", "super",
+            "switch", "synchronized", "this", "throw", "throws",
+            "transient", "try", "void", "volatile", "while"
     );
     private Boolean showing;
 
@@ -61,10 +69,7 @@ public class Intellisense
         {
             lstIntelliSense.setItems(keywords);
             ex.printStackTrace();
-
         }
-
-
     }
 
 
@@ -76,9 +81,8 @@ public class Intellisense
         }
         catch (Exception ex)
         {
-
+            System.out.println(ex);
         }
-
     }
 
     public void goUp()
@@ -89,9 +93,8 @@ public class Intellisense
         }
         catch (Exception ex)
         {
-
+            System.out.println(ex);
         }
-
     }
 
     public String getSelectedItem()
@@ -127,13 +130,10 @@ public class Intellisense
         {
             return false;
         }
-
     }
 
     public Boolean isShowing()
     {
         return showing;
     }
-
-
 }

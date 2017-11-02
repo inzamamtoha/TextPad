@@ -1,5 +1,7 @@
 package com.alhelal.textpad;
 
+import javafx.scene.control.Tab;
+
 import java.io.File;
 
 public class FileBox
@@ -11,10 +13,10 @@ public class FileBox
         this.simpleFileFactory = simpleFileFactory;
     }
 
-    public EditableFile orderFile(File file)
+    public EditableFile orderFile(File file, Options options, Tab tab)
     {
         EditableFile editableFile;
-        editableFile = simpleFileFactory.createFile(file);
+        editableFile = simpleFileFactory.createFile(file, options, tab);
         return editableFile;
     }
 }

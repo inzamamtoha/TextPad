@@ -1,19 +1,23 @@
 package com.alhelal.textpad;
 
+import java.io.BufferedReader;
 import java.io.File;
 
 public class TextFileBehavior implements LanguageBehavior
 {
     @Override
-    public void runCode(File file)
+    public BufferedReader runCode(File file)
     {
         System.out.println("I am text file. No need to compile");
+//        return new BufferedReader(null);
+        return null;
     }
 
     @Override
-    public void buildCode(File file)
+    public BufferedReader buildCode(File file)
     {
         System.out.println("I am text file. No need to build");
+        return new BufferedReader(null);
     }
 
     @Override

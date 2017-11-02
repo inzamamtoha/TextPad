@@ -44,8 +44,8 @@ public class TextPad extends Application
         options.stage = primaryStage;
         Actions actions = new Actions(options, primaryStage);
         actions.setActions();
-        //scene.getStylesheets().add(
-        //      getClass().getResource("/com/alhelal/resource/main_style.css").toExternalForm());
+        options.scene.getStylesheets().add(
+                getClass().getResource("/com/alhelal/resource/java-keywords.css").toExternalForm());
         primaryStage.show();
         //primaryStage.setOnHiding(evt -> intellisense.hide());
     }

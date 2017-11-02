@@ -5,10 +5,10 @@ import javafx.scene.Node;
 import javafx.scene.control.Tab;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import org.fxmisc.flowless.VirtualizedScrollPane;
 import org.fxmisc.richtext.CodeArea;
 import org.fxmisc.richtext.LineNumberFactory;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -18,14 +18,14 @@ public class EditableFile
 {
     public LanguageBehavior languageBehavior;
     public Options options;
-    public CodeArea getCodeAreaFromTab(Tab tb)
+    File file;
+    Tab tab;
+
+    public EditableFile()
     {
-        Node nd = tb.getContent();
-        VirtualizedScrollPane<CodeArea> cd = (VirtualizedScrollPane<CodeArea>) (nd);
-        return cd.getContent();
     }
 
-    public void saveFile(ArrayList<FileTab> fileTabArrayList, Options option)
+    public void saveFile(ArrayList<EditableFile> editableFileArrayList)
     {
         File file;
         String filePath;
@@ -33,7 +33,7 @@ public class EditableFile
         //savefile.getExtensionFilters().add(new FileChooser.ExtensionFilter("Assembly Files", "*.asm"));
         //I change this portion
         System.out.println("saveFile called");
-        if (option == null)
+        if (options == null)
         {
             System.out.println("Optin is null");
         }
@@ -41,26 +41,25 @@ public class EditableFile
         {
             System.out.println("languageBehavior is null");
         }
-        Tab tb = option.centerPane.getSelectionModel().getSelectedItem();
-        String fileName = option.centerPane.getSelectionModel().getSelectedItem().getText();
-        int i=0;
-        while (fileTabArrayList.get(i).tab.equals(tb) == false)
+        Tab tb = options.centerPane.getSelectionModel().getSelectedItem();
+        String fileName = options.centerPane.getSelectionModel().getSelectedItem().getText();
+        int i = 0;
+        while (!editableFileArrayList.get(i).tab.equals(tb))
         {
             i++;
         }
-        if(fileTabArrayList.get(i).filePath == null)
+        if (editableFileArrayList.get(i).file == null)
         {
             FileChooser savefile = new FileChooser();
             savefile.setTitle("Open File");
             Stage stage = new Stage();
             file = savefile.showSaveDialog(stage);
-            filePath = file.getPath();
-            fileTabArrayList.get(i).filePath = filePath;
-            option.centerPane.getSelectionModel().getSelectedItem().setText(file.getName());
+            editableFileArrayList.get(i).file = file;
+            options.centerPane.getSelectionModel().getSelectedItem().setText(file.getName());
         }
         else
         {
-            filePath = fileTabArrayList.get(i).filePath;
+            file = editableFileArrayList.get(i).file;
         }
         // Set the new title of the window
         // setTitle(file.getName() + " | " + SimpleJavaTextEditor.NAME);
@@ -68,11 +67,11 @@ public class EditableFile
         try
         {
             //BufferedWriter out = new BufferedWriter(new FileWriter(file.getPath()));
-            FileWriter fileWriter = new FileWriter(new File(filePath));
+            FileWriter fileWriter = new FileWriter(file);
             //System.out.println(file.getPath());
             // Write the contents of the CodeArea to the file
-            option.output = getCodeAreaFromTab(option.centerPane.getSelectionModel().getSelectedItem());
-            fileWriter.write(option.output.getText());
+            options.output = new Actions().getCodeAreaFromTab(options.centerPane.getSelectionModel().getSelectedItem());
+            fileWriter.write(options.output.getText());
             // Close the file stream
             fileWriter.flush();
             fileWriter.close();
@@ -117,14 +116,58 @@ public class EditableFile
         languageBehavior = langBehavior;
     }
 
-    public void performRunCode(File file)
+    public void performRunCode(ArrayList<EditableFile> editableFileArrayList)
     {
-        languageBehavior.runCode(file);
+        saveFile(editableFileArrayList);
+        Tab tb = options.centerPane.getSelectionModel().getSelectedItem();
+        int i = 0;
+        while (!editableFileArrayList.get(i).tab.equals(tb))
+        {
+            i++;
+        }
+        LanguageBehavior lb = editableFileArrayList.get(i).languageBehavior;
+        File runFile = editableFileArrayList.get(i).file;
+        BufferedReader stdInput = lb.runCode(runFile);
+        String string;
+        options.outputText.setText(null);
+        try
+        {
+            if (stdInput != null)
+            {
+                while ((string = stdInput.readLine()) != null)
+                {
+                    if (options == null)
+                    {
+                        System.out.println("option is null, so");
+                    }
+                    else
+                    {
+                        options.outputText.appendText(string);
+                    }
+                }
+            }
+        }
+        catch (IOException io)
+        {
+            System.out.println(io);
+        }
     }
 
     public void performBuildCode(File file)
     {
-        languageBehavior.buildCode(file);
+        BufferedReader stdInput = languageBehavior.buildCode(file);
+        String string;
+        try
+        {
+            while ((string = stdInput.readLine()) != null)
+            {
+                options.outputText.appendText(string);
+            }
+        }
+        catch (IOException io)
+        {
+            System.out.println(io);
+        }
     }
 
     public void performSetHighlightableText()

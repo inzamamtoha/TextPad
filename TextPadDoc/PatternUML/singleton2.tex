@@ -2,25 +2,15 @@
 \usepackage{pgf-umlcd}
 \begin{document}
 \begin{tikzpicture}
-
-  \begin{interface}[text width = 6cm]{LanguageBehavior}{0,0}
+  \begin{class}[text width = 8cm]{JavaLanguageBehavior}{0,0}
     \attribute{$\sim$ com.alhelal.textpad}
-    \operation{+ runCode(file : File)}
-    \operation{+ buildCode(file : File)}
-    \operation{+ setHighlightableText()}
-    \operation{+ setAutoCompletableText()}
-  \end{interface}
-
-  \begin{class}[text width = 8cm,yshift=-3cm]{JavaLanguageBehavior}{LanguageBehavior.south}
-    \implement{LanguageBehavior}
-    \attribute{$\sim$ com.alhelal.textpad}
-    \attribute{+ uniqueInstance : JavaLanguageBehavior}
+    \attribute{$-$ uniqueInstance : JavaLanguageBehavior}
     \operation{+ getUniqueInstance : JavaLanguageBehavior}
-    \operation{+ runCode(file : File)}
-    \operation{+ buildCode(file : File)}
+    \operation{+ runCode(file : File) : BufferedReader}
+    \operation{+ buildCode(file : File) : BufferedReader}
     \operation{+ setHighlightableText()}
     \operation{+ setAutoCompletableText()}
   \end{class}
-  \node [above=3mm] at (current bounding box.north) {Singleton Pattern}
+  \node [above=3mm] at (current bounding box.north) {Singleton Pattern};
 \end{tikzpicture}
 \end{document}

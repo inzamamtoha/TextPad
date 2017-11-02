@@ -1,6 +1,7 @@
 package com.alhelal.textpad;
 
 import javafx.event.Event;
+import javafx.scene.Node;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.Tooltip;
@@ -16,15 +17,17 @@ import java.util.ArrayList;
 
 public class Actions
 {
-    Stage primaryStage;
-    File file;
-    private EditableFile editableFile;
     public Options options;
-    ArrayList<FileTab> fileTabArrayList;
+    Stage primaryStage;
+    ArrayList<EditableFile> editableFilesArrayList;
+    private EditableFile editableFile;
+
+    public Actions()
+    {
+    }
 
     public Actions(Options options, Stage primaryStage)
     {
-        System.out.println("Action constractor is called");
         if (options == null)
         {
             System.out.println("option is null");
@@ -35,8 +38,7 @@ public class Actions
         }
         this.primaryStage = primaryStage;
         this.options = options;
-        editableFile = new TextFile(this.options);
-        fileTabArrayList = new ArrayList<>();
+        editableFilesArrayList = new ArrayList<>();
         newFile();
     }
 
@@ -46,19 +48,26 @@ public class Actions
         options.btnNew.setOnAction(evt -> newFile());
         options.btnFullScreen.setOnAction(evt -> toggleFullScreen());
         options.btnOpen.setOnAction(evt -> openFile());
-        options.btnSave.setOnAction(evt -> editableFile.saveFile(fileTabArrayList,options));
-        options.btnRun.setOnAction(evt -> editableFile.performRunCode(file));
-        options.menuPrint.setOnAction(evt -> editableFile.printFile(new TextArea(editableFile.getCodeAreaFromTab(
+        options.btnSave.setOnAction(evt -> editableFile.saveFile(editableFilesArrayList));
+        options.btnRun.setOnAction(evt -> editableFile.performRunCode(editableFilesArrayList));
+        options.menuPrint.setOnAction(evt -> editableFile.printFile(new TextArea(getCodeAreaFromTab(
                 options.centerPane.getSelectionModel().getSelectedItem()).getText())));
 
         options.menuFullScreen.setOnAction(evt -> toggleFullScreen());
-        options.menuShowLineNumber.setOnAction(evt -> editableFile.toggleLineNumber(editableFile.getCodeAreaFromTab(
+        options.menuShowLineNumber.setOnAction(evt -> editableFile.toggleLineNumber(getCodeAreaFromTab(
                 options.centerPane.getSelectionModel().getSelectedItem())));
 
         options.menuExit.setOnAction(evt -> System.exit(0));
         options.menuNew.setOnAction(evt -> newFile());
-        options.menuSave.setOnAction(evt -> editableFile.saveFile(fileTabArrayList,options));
+        options.menuSave.setOnAction(evt -> editableFile.saveFile(editableFilesArrayList));
         options.menuOpen.setOnAction(evt -> openFile());
+    }
+
+    public CodeArea getCodeAreaFromTab(Tab tb)
+    {
+        Node nd = tb.getContent();
+        VirtualizedScrollPane<CodeArea> cd = (VirtualizedScrollPane<CodeArea>) (nd);
+        return cd.getContent();
     }
 
     private void openFile()
@@ -67,22 +76,20 @@ public class Actions
         openfile.setTitle("Open File");
         //openfile.getExtensionFilters().add(new FileChooser.ExtensionFilter("Assembly Files", "*.asm"));
         File file = openfile.showOpenDialog(options.stage);
-        String path = file.getPath();
         if (file != null)
         {
-            CodeArea cd = editableFile.getCodeAreaFromTab(options.centerPane.getSelectionModel().getSelectedItem());
+            CodeArea cd = getCodeAreaFromTab(options.centerPane.getSelectionModel().getSelectedItem());
             //cd.replaceText(FileUtils.readFiletoString(new File(path), "UTF-8"));
 
             Tab tb = options.centerPane.getSelectionModel().getSelectedItem();
-            int i=0;
-            while (fileTabArrayList.get(i).tab.equals(tb) == false)
+            int i = 0;
+            while (editableFilesArrayList.get(i).tab.equals(tb) == false)
             {
                 i++;
             }
-                fileTabArrayList.get(i).filePath = path;
             try
             {
-                cd.replaceText(new String(Files.readAllBytes(Paths.get(path))));
+                cd.replaceText(new String(Files.readAllBytes(Paths.get(file.getPath()))));
                 options.centerPane.getSelectionModel().getSelectedItem().setText(file.getName());
                 String name = file.getName();
                 //String[] splited;
@@ -94,8 +101,7 @@ public class Actions
                 //splited[0];
                 SimpleFileFactory simpleFileFactory = new SimpleFileFactory();
                 FileBox fileBox = new FileBox(simpleFileFactory);
-                this.file = file;
-                editableFile = fileBox.orderFile(file);
+                editableFilesArrayList.add(i, fileBox.orderFile(file, options, tb));
 
                 //editableFile = new FileBox(simpleFileFactory);
 
@@ -120,6 +126,11 @@ public class Actions
             }
 
             //CodeArea cd = new CodeArea();
+        }
+        System.out.println("open file success");
+        if (editableFilesArrayList == null)
+        {
+            System.out.println("editableFilesArrayList is null");
         }
     }
 
@@ -146,7 +157,7 @@ public class Actions
         Tab newTab = addTab();
         options.centerPane.getTabs().add(newTab);
         options.centerPane.getSelectionModel().select(newTab);
-        editableFile.getCodeAreaFromTab(options.centerPane.getSelectionModel().getSelectedItem()).requestFocus();
+        getCodeAreaFromTab(options.centerPane.getSelectionModel().getSelectedItem()).requestFocus();
     }
 
     private Tab addTab()
@@ -159,11 +170,13 @@ public class Actions
         tab.setOnSelectionChanged((Event event) -> {
             if (tab.isSelected())
             {
-                editableFile.getCodeAreaFromTab(tab).requestFocus();
+                getCodeAreaFromTab(tab).requestFocus();
             }
         });
-        FileTab fileTab = new FileTab(null, tab);
-        fileTabArrayList.add(fileTab);
+        SimpleFileFactory simpleFileFactory = new SimpleFileFactory();
+        FileBox fileBox = new FileBox(simpleFileFactory);
+        editableFile = fileBox.orderFile(null, options, tab);
+        editableFilesArrayList.add(editableFile);
         return tab;
     }
 }

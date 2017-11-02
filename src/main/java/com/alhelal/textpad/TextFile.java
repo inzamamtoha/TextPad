@@ -1,15 +1,16 @@
 package com.alhelal.textpad;
 
+import javafx.scene.control.Tab;
+
+import java.io.File;
+
 public class TextFile extends EditableFile
 {
-    public TextFile(Options option)
+    public TextFile(File file, Options options, Tab tab)
     {
-        System.out.println("TextFile constractor is called");
-        if (option == null)
-        {
-            System.out.println("option is null");
-        }
-        super.options = option;
+        this.file = file;
+        this.options = options;
+        this.tab = tab;
         languageBehavior = new TextFileBehavior();
     }
 }

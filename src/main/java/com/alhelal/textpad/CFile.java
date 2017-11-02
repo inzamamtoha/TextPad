@@ -1,16 +1,16 @@
 package com.alhelal.textpad;
 
+import javafx.scene.control.Tab;
+
+import java.io.File;
+
 public class CFile extends EditableFile
 {
-    String path;
-
-    public CFile(String path)
+    public CFile(File file, Options options, Tab tab)
     {
-        this.path = path;
-    }
-
-    public CFile()
-    {
+        this.file = file;
+        this.options = options;
+        this.tab = tab;
         languageBehavior = CLanguageBehavior.getUniqueInstance();
     }
 }

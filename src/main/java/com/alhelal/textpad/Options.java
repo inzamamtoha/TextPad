@@ -1,11 +1,10 @@
 package com.alhelal.textpad;
 
 import javafx.geometry.Insets;
+import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyCodeCombination;
 import javafx.scene.input.KeyCombination;
@@ -29,6 +28,7 @@ public class Options
     public final ToolBar toolbar;
     public final VBox bottomPane;
     public final TitledPane outputWindow;
+    //public final SplitPane outputWindow;
     public final HBox StatusBar;
     public final Button btnNew;
     public final Button btnOpen;
@@ -78,6 +78,8 @@ public class Options
     public final Label StatusBarText;
     public final TextField txtFind;
     public final HBox findBox;
+    public final SplitPane outputSplitPane;
+    public TextArea outputText;
     public Scene scene;
     public CodeArea output;
     public Stage stage;
@@ -181,18 +183,21 @@ public class Options
         bottomPane.setAlignment(Pos.CENTER);
         bottomPane.setStyle("-fx-width: 100%");
 //TitledPane outputWindow
-        outputWindow = new TitledPane("Output",
-                new TextArea("Once upon a time \nthere many uninhabited lands"));
-        outputWindow.setExpanded(false);
+        outputText = new TextArea();
+        outputWindow = new TitledPane("Output", outputText);
+        //   outputWindow = new SplitPane(new TextArea());
+        outputWindow.setExpanded(true);
         outputWindow.setStyle("-fx-width: 100%");
-        outputWindow.setAnimated(false);
+        //outputWindow.setPrefHeight(10);
+        outputWindow.setMaxHeight(800);
+        //       outputWindow.setAnimated(false);
         //outputWindow.setGraphic(new ImageView(new Image(getClass().getResource("output.png").toExternalForm(),5,5,true,true)));
         //outputWindow.setContentDisplay(ContentDisplay.RIGHT);
         //outputWindow.applyCss();
         //outputWindow.layout();
         //outputWindow.setPrefHeight(200);
         //outputWindow.setOnDragDetected(event -> {
-         //   System.out.println("setOnDragDetected");outputWindow.setMaxHeight(600);});
+        //   System.out.println("setOnDragDetected");outputWindow.setMaxHeight(600);});
         //outputWindow.setOnMouseClicked(event -> {outputWindow.setLayoutY(-500);});
 
         StatusBar = new HBox();
@@ -299,13 +304,19 @@ public class Options
 
 
         StatusBar.getChildren().add(StatusBarText);
-        bottomPane.getChildren().addAll(outputWindow, StatusBar);
+        //bottomPane.getChildren().addAll(outputWindow, StatusBar);
+        outputSplitPane = new SplitPane(centerPane, outputWindow);
+        //outputSplitPane.setPrefHeight(10);
+        //outputSplitPane.setMaxHeight(800);
+        //outputSplitPane.setBorder(Border.EMPTY);
+        outputSplitPane.setStyle("-fx-box-border: transparent;");
+        //outputSplitPane.setId("outputSplitPane");
+        outputSplitPane.setDividerPosition(0, 0.9);
+        outputSplitPane.setOrientation(Orientation.VERTICAL);
+        mainPane.setCenter(outputSplitPane);
 
-
-        mainPane.setCenter(centerPane);
         mainPane.setTop(topPane);
         mainPane.setBottom(bottomPane);
-
 
     }
 
