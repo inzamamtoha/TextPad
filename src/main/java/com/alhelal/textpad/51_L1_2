@@ -1,7 +1,0 @@
-#!/bin/bash
-i=0
-for f in  *.java
-do
-	cat authorname $f >> $f
-#echo "$((++i)) $f"
-done 
