@@ -1,3 +1,7 @@
+/*
+* @author : alhelal
+* */
+
 package com.alhelal.textpad;
 
 import java.io.BufferedReader;
@@ -6,7 +10,10 @@ import java.io.File;
 public class TextFileBehavior implements LanguageBehavior
 {
     private volatile static TextFileBehavior uniqueInstance;
-    private TextFileBehavior(){}
+
+    private TextFileBehavior()
+    {
+    }
 
     public static TextFileBehavior getUniqueInstance()
     {

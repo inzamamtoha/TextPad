@@ -1,0 +1,22 @@
+\documentclass{standalone}
+\usepackage{pgf-umlcd}
+\begin{document}
+\begin{tikzpicture}
+
+  \begin{class}[text width = 9cm]{Action}{0,0}
+    \attribute{$\sim$ com.alhelal.textpad}
+    \attribute{+ options : Option}
+    \attribute{+ stage : PrimaryStage}
+    \attribute{+ editableFilesArrayList : ArrayList$<$EditableFile$>$}
+    \attribute{$-$ editableFile : EditableFile}
+    \operation{+ setActions()}
+    \operation{+ CodeAreaFromTab(tab : Tab) : CodeArea}
+    \operation{+ openFile()}
+    \operation{+ toggoleFullScreen()}
+    \operation{+ suggest()}
+    \operation{+ newFile()}
+    \operation{+ addTab() : Tab}
+\end{class}
+  \node [above=3mm] at (current bounding box.north) {Singleton Pattern};
+\end{tikzpicture}
+\end{document}

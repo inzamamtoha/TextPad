@@ -1,3 +1,7 @@
+/*
+* @author : alhelal
+* */
+
 package com.alhelal.textpad;
 
 import javafx.geometry.Insets;
@@ -15,13 +19,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import org.fxmisc.richtext.CodeArea;
 
-import java.io.BufferedReader;
-
-/**
- * @author alhelal
- */
 public class Options
-        //public class TextPad extends Application {
 {
     public volatile static Options uniqueInstance;
 
@@ -30,7 +28,6 @@ public class Options
     public final ToolBar toolbar;
     public final VBox bottomPane;
     public final TitledPane outputWindow;
-    //public final SplitPane outputWindow;
     public final HBox StatusBar;
     public final Button btnNew;
     public final Button btnOpen;
@@ -89,14 +86,12 @@ public class Options
     public boolean fullScreen;
     public boolean lineNumber;
 
-    //    public TextPad() {
     private Options()
     {
         fullScreen = false;
+        fullScreen = true;
         lineNumber = true;
         mainMenu = new MenuBar();
-        // mainMenu.getStylesheets().add(
-        //       this.getClass().getResource("/com/alhelal/resource/toolbar_style.css").toExternalForm());
         mainMenu.getStylesheets().add(this.getClass().getResource("../resource/toolbar_style.css").toExternalForm());
         fileMenu = new Menu("File");
 
@@ -185,23 +180,12 @@ public class Options
         bottomPane = new VBox();
         bottomPane.setAlignment(Pos.CENTER);
         bottomPane.setStyle("-fx-width: 100%");
-//TitledPane outputWindow
         outputText = new TextArea();
         outputWindow = new TitledPane("Output", outputText);
-        //   outputWindow = new SplitPane(new TextArea());
+        outputText.setEditable(false);
         outputWindow.setExpanded(true);
         outputWindow.setStyle("-fx-width: 100%");
-        //outputWindow.setPrefHeight(10);
         outputWindow.setMaxHeight(800);
-        //       outputWindow.setAnimated(false);
-        //outputWindow.setGraphic(new ImageView(new Image(getClass().getResource("output.png").toExternalForm(),5,5,true,true)));
-        //outputWindow.setContentDisplay(ContentDisplay.RIGHT);
-        //outputWindow.applyCss();
-        //outputWindow.layout();
-        //outputWindow.setPrefHeight(200);
-        //outputWindow.setOnDragDetected(event -> {
-        //   System.out.println("setOnDragDetected");outputWindow.setMaxHeight(600);});
-        //outputWindow.setOnMouseClicked(event -> {outputWindow.setLayoutY(-500);});
 
         StatusBar = new HBox();
         StatusBar.setPadding(new Insets(10, 10, 10, 10));
@@ -276,7 +260,7 @@ public class Options
 
         btnSuggest = new Button();
         btnSuggest.setId("suggest");
-        btnSuggest.setPrefSize(28,28);
+        btnSuggest.setPrefSize(28, 28);
         btnSuggest.setTooltip(new Tooltip("Get suggestion"));
 
         txtFind = new TextField();
@@ -300,7 +284,6 @@ public class Options
         toolsMenu.getItems().addAll(menuOpenInTerminal, menuSettings);
         helpMenu.getItems().add(menuAbout);
 
-        //findBox.getChildren().add(txtFind);
         HBox.setHgrow(findBox, Priority.ALWAYS);
         topPane.getChildren().addAll(mainMenu, toolbar);
         mainMenu.getMenus().addAll(fileMenu, editMenu, viewMenu, runMenu, toolsMenu, helpMenu);
@@ -312,13 +295,8 @@ public class Options
 
 
         StatusBar.getChildren().add(StatusBarText);
-        //bottomPane.getChildren().addAll(outputWindow, StatusBar);
         outputSplitPane = new SplitPane(centerPane, outputWindow);
-        //outputSplitPane.setPrefHeight(10);
-        //outputSplitPane.setMaxHeight(800);
-        //outputSplitPane.setBorder(Border.EMPTY);
         outputSplitPane.setStyle("-fx-box-border: transparent;");
-        //outputSplitPane.setId("outputSplitPane");
         outputSplitPane.setDividerPosition(0, 0.9);
         outputSplitPane.setOrientation(Orientation.VERTICAL);
         mainPane.setCenter(outputSplitPane);

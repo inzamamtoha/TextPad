@@ -1,3 +1,7 @@
+/*
+* @author : alhelal
+* */
+
 package com.alhelal.textpad;
 
 import javafx.print.PrinterJob;
@@ -153,21 +157,18 @@ public class EditableFile
         }
     }
 
-    public void performBuildCode(File file)
+    public void performBuildCode(ArrayList<EditableFile> editableFileArrayList)
     {
-        BufferedReader stdInput = languageBehavior.buildCode(file);
-        String string;
-        try
+        saveFile(editableFileArrayList);
+        Tab tb = options.centerPane.getSelectionModel().getSelectedItem();
+        int i=0;
+        while (!editableFileArrayList.get(i).tab.equals(tb))
         {
-            while ((string = stdInput.readLine()) != null)
-            {
-                options.outputText.appendText(string);
-            }
+            i++;
         }
-        catch (IOException io)
-        {
-            System.out.println(io);
-        }
+        LanguageBehavior lb = editableFileArrayList.get(i).languageBehavior;
+        File runFile = editableFileArrayList.get(i).file;
+        lb.runCode(runFile);
     }
 
     public void performSetHighlightableText()

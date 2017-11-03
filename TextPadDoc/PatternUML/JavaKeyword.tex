@@ -1,0 +1,21 @@
+\documentclass{standalone}
+\usepackage{pgf-umlcd}
+\begin{document}
+\begin{tikzpicture}
+
+  \begin{interface}[text width = 13cm]{JavaKeyword}{0,0}
+    \attribute{$\sim$ com.alhelal.textpad}
+    \attribute{$-$ KEYWORDS : String[]}
+    \attribute{$-$ KEYWORD$_$PATTERN : String}
+    \attribute{$-$ PAREN$_$PATTERN : String}
+    \attribute{$-$ BRACE$_$PATTERN : String}
+    \attribute{$-$ BRACKET$_$PATTERN : String}
+    \attribute{$-$ SEMICOLON$_$PATTERN : String}
+    \attribute{$-$ STRING$_$PATTERN : String}
+    \attribute{$-$ COMMENT$_$PATTERN : String}
+    \attribute{$-$ PATTERN : Pattern}
+    \operation{$-$ computeHighlighting(text : String) : StyleSpans$<$Collection$<$String$>>$}
+\end{interface}
+  \node [above=3mm] at (current bounding box.north) {Singleton Pattern};
+\end{tikzpicture}
+\end{document}

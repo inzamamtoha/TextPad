@@ -1,0 +1,15 @@
+\documentclass{standalone}
+\usepackage{pgf-umlcd}
+\begin{document}
+\begin{tikzpicture}
+
+  \begin{interface}[text width = 6cm]{FileTab}{0,0}
+    \attribute{$\sim$ com.alhelal.textpad}
+    \attribute{+ file : File}
+    \attribute{+ tab : Tab}
+    \attribute{+ options : Option}
+    \attribute{+ editableFile : EditableFile}
+\end{interface}
+  \node [above=3mm] at (current bounding box.north) {Singleton Pattern};
+\end{tikzpicture}
+\end{document}

@@ -1,3 +1,7 @@
+/*
+* @author : alhelal
+* */
+
 package com.alhelal.textpad;
 
 import org.apache.commons.io.FilenameUtils;

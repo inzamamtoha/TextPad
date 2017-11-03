@@ -1,3 +1,7 @@
+/*
+* @author : alhelal
+* */
+
 package com.alhelal.textpad;
 
 import org.apache.commons.io.FilenameUtils;
@@ -12,6 +16,8 @@ import java.util.Map;
 public class CLanguageBehavior implements LanguageBehavior
 {
     public volatile static CLanguageBehavior uniqueInstance;
+    BufferedReader stdErr;
+    int maxAnswer = 5;
 
     private CLanguageBehavior()
     {
@@ -36,19 +42,28 @@ public class CLanguageBehavior implements LanguageBehavior
     {
         String objectFileName = FilenameUtils.removeExtension(file.getName());
         String objectFilePath = file.getParent() + "/" + objectFileName;
-        buildCode(file);
-        BufferedReader bufferedReader;// = new BufferedReader(null);
-        try
+        if (buildCode(file) != null)
         {
-            Process process = Runtime.getRuntime().exec(objectFilePath);
-            bufferedReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-            return bufferedReader;
+            BufferedReader stdInput;// = new BufferedReader(null);
+            try
+            {
+                Process process = Runtime.getRuntime().exec(objectFilePath);
+                stdInput = new BufferedReader(new InputStreamReader(process.getInputStream()));
+                stdErr = new BufferedReader(new InputStreamReader(process.getErrorStream()));
+                if (stdErr != null)
+                {
+                    System.out.println("suggest called");
+                   // suggest();
+                }
+                return stdInput;
+            }
+            catch (IOException io)
+            {
+                System.out.println(io);
+                return null;
+            }
         }
-        catch (IOException io)
-        {
-            System.out.println(io);
-            return null;
-        }
+        return null;
     }
 
     public Map<BufferedReader, String> map()
@@ -60,6 +75,7 @@ public class CLanguageBehavior implements LanguageBehavior
 
     public BufferedReader buildCode(File file)
     {
+        Map<BufferedReader, String> map = new HashMap<>();
         String dirname = file.getParent();
         String filePath = file.getPath();
         String fileName = file.getName();
@@ -70,13 +86,18 @@ public class CLanguageBehavior implements LanguageBehavior
         {
             Process process = Runtime.getRuntime().exec(command);
             stdInput = new BufferedReader(new InputStreamReader(process.getInputStream()));
-            BufferedReader stdErr = new BufferedReader(new InputStreamReader(process.getErrorStream()));
+            stdErr = new BufferedReader(new InputStreamReader(process.getErrorStream()));
             String compileResult;
             while ((compileResult = stdInput.readLine()) != null)
                 System.out.println(compileResult);
 
             while ((compileResult = stdErr.readLine()) != null)
                 System.out.println(compileResult);
+            if (stdErr != null)
+            {
+                System.out.println("suggest called");
+                suggest();
+            }
             return stdInput;
         }
         catch (IOException io)
@@ -94,5 +115,14 @@ public class CLanguageBehavior implements LanguageBehavior
     public void setAutoCompletableText()
     {
 
+    }
+
+    public void suggest()
+    {
+        SuggestionInterfaces suggestionInterfaces = new suggestionAdapter();
+        suggestionInterfaces.showSuggestion(stdErr, maxAnswer);
+        //SuggestionPanel suggestionPanel = new SuggesttionPanel();
+        //suggestionPanel.();
+        System.out.println("btn suggest");
     }
 }

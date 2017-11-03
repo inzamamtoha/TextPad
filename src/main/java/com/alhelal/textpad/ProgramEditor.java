@@ -1,8 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+* @author : alhelal
+* */
+
 package com.alhelal.textpad;
 
 import javafx.beans.value.ObservableValue;
@@ -29,12 +28,12 @@ import java.util.regex.Pattern;
  */
 public class ProgramEditor implements Editable
 {
+    private final Pattern PATTERN;
+    WordInDocument currentWord = new WordInDocument();
     private CodeArea code;
     private Intellisense intellisense;
     private VirtualizedScrollPane<CodeArea> editorPane;
     private String filename;
-    WordInDocument currentWord = new WordInDocument();
-
     private String[] KEYWORDS = new String[1000];
     private String KEYWORD_PATTERN;
     private String PAREN_PATTERN;
@@ -43,8 +42,6 @@ public class ProgramEditor implements Editable
     private String SEMICOLON_PATTERN;
     private String STRING_PATTERN;
     private String COMMENT_PATTERN;
-
-    private final Pattern PATTERN;
 
     public ProgramEditor(Stage parent, String keywordsPath)
     {

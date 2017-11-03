@@ -1,0 +1,32 @@
+\documentclass{standalone}
+\usepackage{pgf-umlcd}
+\begin{document}
+\begin{tikzpicture}
+
+  \begin{interface}[text width = 6cm]{Editor}{0,0}
+    \attribute{$\sim$ com.alhelal.textpad}
+    \attribute{$-$ KEYWORDS : String[]}
+    \attribute{$-$ KEYWORD_PATTERN : String}
+    \attribute{$-$ PAREN_PATTERN : String}
+    \attribute{$-$ BRACE_PATTERN : String}
+    \attribute{$-$ BRACKET_PATTERN : String}
+    \attribute{$-$ SEMICOLON_PATTERN : String}
+    \attribute{$-$ STRING_PATTERN : String}
+    \attribute{$-$ COMMENT_PATTERN : String}
+    \attribute{$-$ PATTERN : Pattern}
+    \attribute{+ currentWord : WordInDocument}
+    \attribute{$-$ code : CodeArea}
+    \attribute{$-$ intellisense : Intellisense}
+    \attribute{$-$ editorPane : VirtualizedScrollPane<CodeArea>}
+    \attribute{$-$ filename : String}
+    \operation{$-$ computeHighlighting(text : String) : StyleSpans<Collection<String>>}
+    \operation{+ getIntellisense() : Intellisense}
+    \operation{$-$ setCodeAreaProperties(owner : Stage)}
+    \operation{$-$ getWord(txt : CodeArea, caretPosition : int)}
+    \operation{+ getEditArea() : CodeArea)}
+    \operation{+ getEditArea() : CodeArea)}
+    \operation{+ assemble() : String)}
+\end{interface}
+  \node [above=3mm] at (current bounding box.north) {Singleton Pattern};
+\end{tikzpicture}
+\end{document}

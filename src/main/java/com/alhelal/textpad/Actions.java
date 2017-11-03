@@ -1,3 +1,7 @@
+/*
+* @author : alhelal
+* */
+
 package com.alhelal.textpad;
 
 import javafx.event.Event;
@@ -44,17 +48,18 @@ public class Actions
 
     public void setActions()
     {
-
+        CLanguageBehavior cLanguageBehavior = CLanguageBehavior.getUniqueInstance();
         options.btnNew.setOnAction(evt -> newFile());
         options.btnFullScreen.setOnAction(evt -> toggleFullScreen());
         options.btnOpen.setOnAction(evt -> openFile());
         options.btnSave.setOnAction(evt -> editableFile.saveFile(editableFilesArrayList));
         options.btnRun.setOnAction(evt -> editableFile.performRunCode(editableFilesArrayList));
+        options.btnBuild.setOnAction(evt -> editableFile.performBuildCode(editableFilesArrayList));
         options.menuPrint.setOnAction(evt -> editableFile.printFile(new TextArea(getCodeAreaFromTab(
                 options.centerPane.getSelectionModel().getSelectedItem()).getText())));
 
         options.menuFullScreen.setOnAction(evt -> toggleFullScreen());
-        options.btnSuggest.setOnAction(evt -> suggest());
+        options.btnSuggest.setOnAction(evt -> cLanguageBehavior.suggest());
 
         options.menuShowLineNumber.setOnAction(evt -> editableFile.toggleLineNumber(getCodeAreaFromTab(
                 options.centerPane.getSelectionModel().getSelectedItem())));
@@ -154,12 +159,6 @@ public class Actions
         }
     }
 
-    public void suggest()
-    {
-        //SuggestionPanel suggestionPanel = new SuggesttionPanel();
-        //suggestionPanel.();
-        System.out.println("btn suggest");
-    }
     private void newFile()
     {
         Tab newTab = addTab();

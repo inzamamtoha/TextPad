@@ -1,8 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+* @author : alhelal
+* */
+
 package com.alhelal.textpad;
 
 import javafx.beans.value.ObservableValue;
@@ -15,27 +14,27 @@ import org.fxmisc.richtext.PopupAlignment;
 import org.fxmisc.richtext.model.StyleSpans;
 import org.fxmisc.richtext.model.StyleSpansBuilder;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.text.BreakIterator;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * @author alhelal
  */
 public class NormalTextEditor implements Editable
 {
+    private static final Set<String> dictionary = new HashSet<String>();
+    WordInDocument currentWord = new WordInDocument();
     private CodeArea code;
     private Intellisense intellisense;
     private VirtualizedScrollPane<CodeArea> editorPane;
     private String filename;
-    WordInDocument currentWord = new WordInDocument();
-
-    private static final Set<String> dictionary = new HashSet<String>();
 
     public NormalTextEditor(Stage parent, String keywordsPaht)
     {

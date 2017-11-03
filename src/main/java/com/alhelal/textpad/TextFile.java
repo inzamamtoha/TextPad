@@ -1,14 +1,17 @@
+/*
+* @author : alhelal
+* */
+
 package com.alhelal.textpad;
 
 import javafx.scene.control.Tab;
-import org.fxmisc.flowless.VirtualizedScrollPane;
-import org.fxmisc.richtext.CodeArea;
 
 import java.io.File;
 
 public class TextFile extends EditableFile
 {
     String keywordsPath = "src/main/java/com/alhelal/resource/Dictionary";
+
     public TextFile(File file, Options options, Tab tab)
     {
         this.file = file;

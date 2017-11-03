@@ -1,15 +1,17 @@
+/*
+* @author : alhelal
+* */
+
 package com.alhelal.textpad;
 
-import javafx.event.Event;
 import javafx.scene.control.Tab;
-import org.fxmisc.flowless.VirtualizedScrollPane;
-import org.fxmisc.richtext.CodeArea;
 
 import java.io.File;
 
 public class CFile extends EditableFile
 {
     String keywordsPath = "src/main/java/com/alhelal/resource/CKeywords";
+
     public CFile(File file, Options options, Tab tab)
     {
         this.file = file;

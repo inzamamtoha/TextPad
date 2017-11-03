@@ -1,8 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+* @author : alhelal
+* */
+
 package com.alhelal.textpad;
 
 import javafx.collections.FXCollections;
@@ -64,7 +63,7 @@ public class Intellisense
         {
             System.out.println(io);
         }
-        keywords.addAll("hello","clear");
+        keywords.addAll("hello", "clear");
         stageIntelliSense = new Popup();
         root = new VBox();
         showing = false;
@@ -78,12 +77,12 @@ public class Intellisense
 
     }
 
-    public void selectItem(String s)
+    public void selectItem(String string)
     {
         try
         {
 
-            lstIntelliSense.setItems(keywords.filtered((String t) -> t.substring(0, s.length()).equals(s)));
+            lstIntelliSense.setItems(keywords.filtered((String t) -> t.substring(0, string.length()).equals(string)));
             lstIntelliSense.getSelectionModel().select(0);
         }
 
@@ -142,11 +141,11 @@ public class Intellisense
         showing = false;
     }
 
-    public Boolean exists(String s)
+    public Boolean exists(String string)
     {
-        if (s.length() > 0)
+        if (string.length() > 0)
         {
-            return keywords.filtered((String t) -> t.substring(0, s.length()).equals(s)).size() >= 1;
+            return keywords.filtered((String t) -> t.substring(0, string.length()).equals(string)).size() >= 1;
         }
         else
         {
