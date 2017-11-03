@@ -6,17 +6,17 @@ import java.io.File;
 
 public class FileBox
 {
-    SimpleFileFactory simpleFileFactory;
+    FileFactory fileFactory;
 
-    public FileBox(SimpleFileFactory simpleFileFactory)
+    public FileBox(FileFactory fileFactory)
     {
-        this.simpleFileFactory = simpleFileFactory;
+        this.fileFactory = fileFactory;
     }
 
     public EditableFile orderFile(File file, Options options, Tab tab)
     {
         EditableFile editableFile;
-        editableFile = simpleFileFactory.createFile(file, options, tab);
+        editableFile = fileFactory.createFile(file, options, tab);
         return editableFile;
     }
 }

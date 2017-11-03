@@ -54,6 +54,8 @@ public class Actions
                 options.centerPane.getSelectionModel().getSelectedItem()).getText())));
 
         options.menuFullScreen.setOnAction(evt -> toggleFullScreen());
+        options.btnSuggest.setOnAction(evt -> suggest());
+
         options.menuShowLineNumber.setOnAction(evt -> editableFile.toggleLineNumber(getCodeAreaFromTab(
                 options.centerPane.getSelectionModel().getSelectedItem())));
 
@@ -99,11 +101,11 @@ public class Actions
                 //System.out.println("length =" + splited.length);
                 //String extension = FilenameUtils.getExtension(name);
                 //splited[0];
-                SimpleFileFactory simpleFileFactory = new SimpleFileFactory();
-                FileBox fileBox = new FileBox(simpleFileFactory);
+                FileFactory fileFactory = new FileFactory();
+                FileBox fileBox = new FileBox(fileFactory);
                 editableFilesArrayList.add(i, fileBox.orderFile(file, options, tb));
 
-                //editableFile = new FileBox(simpleFileFactory);
+                //editableFile = new FileBox(fileFactory);
 
                /* if (file.getName().endsWith("java"))
                 {
@@ -152,6 +154,12 @@ public class Actions
         }
     }
 
+    public void suggest()
+    {
+        //SuggestionPanel suggestionPanel = new SuggesttionPanel();
+        //suggestionPanel.();
+        System.out.println("btn suggest");
+    }
     private void newFile()
     {
         Tab newTab = addTab();
@@ -162,21 +170,24 @@ public class Actions
 
     private Tab addTab()
     {
-
-        Editor ed = new Editor(primaryStage);
+        String keywordsPath = "src/main/java/com/alhelal/resource/Keywords";
+        //NormalTextEditor ed = new NormalTextEditor(primaryStage, keywordsPath);
+        ProgramEditor ed = new ProgramEditor(primaryStage, keywordsPath);
         String fileName = "*Untitled";
         Tab tab = new Tab(fileName,
                 new VirtualizedScrollPane<CodeArea>(ed.getEditArea()));
+        //Tab tab = new Tab(fileName);
         tab.setOnSelectionChanged((Event event) -> {
             if (tab.isSelected())
             {
                 getCodeAreaFromTab(tab).requestFocus();
             }
         });
-        SimpleFileFactory simpleFileFactory = new SimpleFileFactory();
-        FileBox fileBox = new FileBox(simpleFileFactory);
+        FileFactory fileFactory = new FileFactory();
+        FileBox fileBox = new FileBox(fileFactory);
         editableFile = fileBox.orderFile(null, options, tab);
         editableFilesArrayList.add(editableFile);
+
         return tab;
     }
 }

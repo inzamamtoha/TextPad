@@ -5,6 +5,24 @@ import java.io.File;
 
 public class TextFileBehavior implements LanguageBehavior
 {
+    private volatile static TextFileBehavior uniqueInstance;
+    private TextFileBehavior(){}
+
+    public static TextFileBehavior getUniqueInstance()
+    {
+        if (uniqueInstance == null)
+        {
+            synchronized (TextFileBehavior.class)
+            {
+                if (uniqueInstance == null)
+                {
+                    uniqueInstance = new TextFileBehavior();
+                }
+            }
+        }
+        return uniqueInstance;
+    }
+
     @Override
     public BufferedReader runCode(File file)
     {

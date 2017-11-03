@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.7)  31 OCT 2017 19:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.7)  3 NOV 2017 16:06
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **factoryMethod.tex
 (./factoryMethod.tex
@@ -433,8 +434,7 @@ File: tikzlibraryfit.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.5)
 \c@umlcdClassAbstractClassNum=\count112
 \c@umlcdClassInterfaceNum=\count113
 \c@umlcdClassSplitPartNum=\count114
-)
-No file factoryMethod.aux.
+) (./factoryMethod.aux)
 \openout1 = `factoryMethod.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -449,6 +449,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
+
 ABD: EveryShipout initializing macros
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -514,9 +515,9 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./factoryMethod.aux) ) 
 Here is how much of TeX's memory you used:
- 13129 strings out of 493013
- 281666 string characters out of 6133329
- 335805 words of memory out of 5000000
+ 13131 strings out of 493013
+ 281637 string characters out of 6133329
+ 335752 words of memory out of 5000000
  16445 multiletter control sequences out of 15000+600000
  4294 words of font info for 16 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -527,7 +528,7 @@ sfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmti10.pfb>
-Output written on factoryMethod.pdf (1 page, 61332 bytes).
+Output written on factoryMethod.pdf (1 page, 60584 bytes).
 PDF statistics:
  31 PDF objects out of 1000 (max. 8388607)
  22 compressed objects within 1 object stream

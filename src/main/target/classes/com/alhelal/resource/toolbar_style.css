@@ -191,8 +191,9 @@ and open the template in the editor.
     -fx-width: 60px;
     -fx-height: 60px;
     -fx-background-color: transparent;
-     -fx-cursor: hand;
+    -fx-cursor: hand;
 }
+
 
 #full_screen:hover{
     -fx-background-color: white;
@@ -202,6 +203,19 @@ and open the template in the editor.
     -fx-background-image: url("full_screen_off.png");
     
 }
+
+#suggest{
+    -fx-background-image: url("suggest.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center;
+    -fx-background-size: 28px;
+    -fx-width: 60px;
+    -fx-height: 60px;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-margin-right: 20px;
+}
+
 #txtFind{
     -fx-background-image: url("search.png");
     -fx-background-repeat: no-repeat;

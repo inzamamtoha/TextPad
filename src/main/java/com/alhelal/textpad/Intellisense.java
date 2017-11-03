@@ -12,6 +12,11 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Popup;
 import javafx.stage.Window;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
 /**
  * @author alhelal
  */
@@ -21,7 +26,8 @@ public class Intellisense
     private Popup stageIntelliSense;
     private VBox root;
     private ListView<String> lstIntelliSense;
-    private ObservableList<String> keywords = FXCollections.observableArrayList(
+    private ObservableList<String> keywords = FXCollections.observableArrayList();
+    /*
             "abstract", "assert", "boolean", "break", "byte",
             "case", "catch", "char", "class", "const",
             "continue", "default", "do", "double", "else",
@@ -32,17 +38,33 @@ public class Intellisense
             "return", "short", "static", "strictfp", "super",
             "switch", "synchronized", "this", "throw", "throws",
             "transient", "try", "void", "volatile", "while"
-    );
+    );*/
     private Boolean showing;
-
+/*
     public Intellisense(String s)
     {
         this();
         selectItem(s);
-    }
+    }*/
 
-    public Intellisense()
+    public Intellisense(String keywordsPaht)
     {
+        try
+        {
+            String line = null;
+            //BufferedReader bufferedReader = new BufferedReader(new FileReader(new File("src/main/java/com/alhelal/resource/CplusKeywords")));
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(new File(keywordsPaht)));
+            while ((line = bufferedReader.readLine()) != null)
+            {
+                keywords.addAll(line);
+            }
+
+        }
+        catch (IOException io)
+        {
+            System.out.println(io);
+        }
+        keywords.addAll("hello","clear");
         stageIntelliSense = new Popup();
         root = new VBox();
         showing = false;

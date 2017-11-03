@@ -1,0 +1,16 @@
+\documentclass{standalone}
+\usepackage{pgf-umlcd}
+\begin{document}
+\begin{tikzpicture}
+  \begin{class}[text width = 8cm]{TextFileBehavior}{0,0}
+    \attribute{$\sim$ com.alhelal.textpad}
+    \attribute{$-$ uniqueInstance : TextFileBehavior}
+    \operation{+ getUniqueInstance : TextFileBehavior}
+    \operation{+ runCode(file : File) : BufferedReader}
+    \operation{+ buildCode(file : File) : BufferedReader}
+    \operation{+ setHighlightableText()}
+    \operation{+ setAutoCompletableText()}
+  \end{class}
+  \node [above=3mm] at (current bounding box.north) {Singleton Pattern};
+\end{tikzpicture}
+\end{document}

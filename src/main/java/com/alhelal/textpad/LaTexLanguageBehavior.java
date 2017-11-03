@@ -65,7 +65,8 @@ public class LaTexLanguageBehavior implements LanguageBehavior
         String dirname = file.getParent();
         String filePath = file.getPath();
         String fileName = file.getName();
-        String command = "pdflatex -output-directory=" + dirname + filePath;
+        String command = "pdflatex -no-shell-escape -output-directory=" + dirname + " " + filePath;
+        System.out.println("command=" + command);
         BufferedReader stdInput;
         try
         {

@@ -11,22 +11,24 @@
 \begin{document}
 \begin{tikzpicture}
 
-  \begin{abstractclass}[text width = 6cm]{FileStore}{0,0}
+  \begin{abstractclass}[text width = 6cm]{FileFactory}{0,0}
     \attribute{$\sim$ com.alhelal.textpad}
     \operation{+ orderFile(file : File) : EditableFile} 
     \operation[0]{\# createFile(file : File) : EditableFile}
   \end{abstractclass}
 
-  \begin{class}[text width = 6cm,anchor = west,xshift = 5cm,yshift = 1cm]{ProgrammFileFactory}{FileStore.east}
-    \inherit{FileStore}
+  \begin{class}[text width = 6cm,anchor = west,xshift = 5cm,yshift = 1cm]{FileBox}{FileFactory.east}
+    \inherit{FileFactory}
     \attribute{$\sim$ com.alhelal.textpad}
     \operation{+ orderFile(file : File) : EditableFile} 
   \end{class}
 
-  \begin{class}[text width = 11cm, yshift = -2cm]{EditableFile}{ProgrammFileFactory.south}
+  \begin{class}[text width = 11cm, yshift = -2cm]{EditableFile}{FileBox.south}
     \attribute{$\sim$ com.alhelal.textpad}
     \attribute{+ languageBehavior : LanguageBehavior} 
-    \operation{+ options : Options} 
+    \attribute{+ options : Options} 
+    \attribute{+ tab : Tab}
+    \attribute{+ file : File}
     \operation{+ getCodeAreaFromTab(tb : Tab) : CodeArea} 
     \operation{+ saveFile(fileTabArrayList : ArrayList$<$FileTab$>$, option : Options)}
     \operation{+ printFile(node : Node)}
@@ -46,7 +48,6 @@
   \begin{class}[text width = 3.5cm,anchor=north east,yshift = -2cm, xshift = -1.5cm]{CFile}{EditableFile.south west}
     \inherit{EditableFile}
     \attribute{$\sim$ com.alhelal.textpad}
-    \attribute{- path : String}
   \end{class}
 
   \begin{class}[text width=3.5cm,anchor=north west,yshift = -2cm,xshift=-3cm]{CplusFile}{EditableFile.south}
@@ -68,7 +69,7 @@
     \inherit{EditableFile}
     \attribute{$\sim$ com.alhelal.textpad}
   \end{class}
-  \unidirectionalAssociation{ProgrammFileFactory}{}{$<<$instantiate$>>$}{EditableFile}
+  \unidirectionalAssociation{FileBox}{}{$<<$instantiate$>>$}{EditableFile}
   \node [above=3mm] at (current bounding box.north) {Factory Method Pattern};
 \end{tikzpicture}
 \end{document}

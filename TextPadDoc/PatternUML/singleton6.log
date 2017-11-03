@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.7)  1 NOV 2017 11:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.7)  3 NOV 2017 15:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -433,8 +433,7 @@ File: tikzlibraryfit.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.5)
 \c@umlcdClassAbstractClassNum=\count112
 \c@umlcdClassInterfaceNum=\count113
 \c@umlcdClassSplitPartNum=\count114
-)
-No file singleton6.aux.
+) (./singleton6.aux)
 \openout1 = `singleton6.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -449,6 +448,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
+
 ABD: EveryShipout initializing macros
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -509,8 +509,8 @@ e
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./singleton6.aux) ) 
 Here is how much of TeX's memory you used:
- 13038 strings out of 493013
- 279770 string characters out of 6133329
+ 13040 strings out of 493013
+ 279800 string characters out of 6133329
  322380 words of memory out of 5000000
  16355 multiletter control sequences out of 15000+600000
  3948 words of font info for 15 fonts, out of 8000000 for 9000
@@ -519,7 +519,7 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmr10.pfb>
-Output written on singleton6.pdf (1 page, 31146 bytes).
+Output written on singleton6.pdf (1 page, 31148 bytes).
 PDF statistics:
  19 PDF objects out of 1000 (max. 8388607)
  13 compressed objects within 1 object stream

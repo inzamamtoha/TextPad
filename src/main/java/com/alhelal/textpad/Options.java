@@ -15,6 +15,8 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import org.fxmisc.richtext.CodeArea;
 
+import java.io.BufferedReader;
+
 /**
  * @author alhelal
  */
@@ -42,6 +44,7 @@ public class Options
     public final Button btnBuild;
     public final Button btnRun;
     public final ToggleButton btnFullScreen;
+    public final Button btnSuggest;
     public final Button btnRedo;
     public final Button btnSaveAll;
     public final MenuBar mainMenu;
@@ -271,6 +274,11 @@ public class Options
         btnFullScreen.setPrefSize(28, 28);
         btnFullScreen.setTooltip(new Tooltip("Full Screen(F11)"));
 
+        btnSuggest = new Button();
+        btnSuggest.setId("suggest");
+        btnSuggest.setPrefSize(28,28);
+        btnSuggest.setTooltip(new Tooltip("Get suggestion"));
+
         txtFind = new TextField();
         txtFind.setPromptText("Find Text(Ctrl + F)");
         txtFind.setId("txtFind");
@@ -300,7 +308,7 @@ public class Options
                 btnCopy, btnPaste, btnCut, btnDelete, new Separator(),
                 btnUndo, btnRedo, new Separator(),
                 btnBuild, btnRun, new Separator(),
-                btnFullScreen, findBox, txtFind);
+                btnFullScreen, btnSuggest, findBox, txtFind);
 
 
         StatusBar.getChildren().add(StatusBarText);
