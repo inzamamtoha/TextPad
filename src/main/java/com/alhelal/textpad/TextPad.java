@@ -14,7 +14,7 @@ public class TextPad extends Application
 {
     File file;
     private Options options;
-
+    Actions actions;
     public TextPad()
     {
         options = Options.getUniqueInstance();
@@ -35,7 +35,7 @@ public class TextPad extends Application
         options.scene = new Scene(options.mainPane, 800, 600);
         primaryStage.setScene(options.scene);
         options.stage = primaryStage;
-        Actions actions = new Actions(options, primaryStage);
+        actions = new Actions(options, primaryStage);
         actions.setActions();
         options.scene.getStylesheets().add(
                 getClass().getResource("/com/alhelal/resource/java-keywords.css").toExternalForm());
