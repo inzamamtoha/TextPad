@@ -8,4 +8,4 @@ We are doing this project as our SDP lab project. We try to use Design pattern a
 
 ![Preject demo](./textpad.png "Project Demo")
 ![Project complet UML diagram](./TextPadDoc/PatternUML/UML.pdf)
-![See our project in YouTube](https://www.youtube.com/watch?v=8j7uJQBJ8IQ&t=43s)
+[See our project in YouTube](https://www.youtube.com/watch?v=8j7uJQBJ8IQ&t=43s)
