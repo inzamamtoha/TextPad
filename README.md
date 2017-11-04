@@ -6,6 +6,10 @@ We are doing this project as our SDP lab project. We try to use Design pattern a
 
 ![view Singleton Pattern UML used here](./TextPadDoc/PatternUML/singletonCLang.pdf)
 
+![view Strategy Pattern UML used here](./TextPadDoc/PatternUML/strategyPattern.pdf)
+
 ![Preject demo](./textpad.png "Project Demo")
+
 ![Project complet UML diagram](./TextPadDoc/PatternUML/UML.pdf)
+
 [See our project in YouTube](https://www.youtube.com/watch?v=8j7uJQBJ8IQ&t=43s)
