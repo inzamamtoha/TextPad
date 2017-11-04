@@ -1,0 +1,175 @@
+\documentclass[a4paper]{article}
+\usepackage{fullpage}
+\usepackage{pdfpages}
+\usepackage{graphicx}
+
+\begin{document}
+\begin{titlepage}
+\centering
+{\scshape\LARGE University of Dhaka \par}
+\vspace{1cm}
+\vfill
+{\scshape\Large Software Design Pattern Lab(CSE-3214)\\Fall-2017\par}
+\vspace{1.5cm}
+\vfill
+{\huge\bfseries Suggestion Provider Text Editor\par}
+\vspace{2cm}
+\vfill
+{\Large\itshape Md.Al-Helal(Roll-51)\\Md.Inzamam-Ul-Haque(Roll- 85 )\\Md.Toukir Ahmed Sarker(Roll-125)\par}
+\vfill
+% Bottom of the page
+{\large \today\par}
+\end{titlepage}
+
+\section{Introduction}
+%write from here
+A text Editor is used to edit plain text files. Text editors differ from word processors, such as MicrosoftWord or WordPerfect, in that they do not add additional formating information to documents. A plain text file is shown and edited by displaying all the characters the way they are involved in the file. ASCII is the most frequently used character set because of more frequent use of plain text files for programming and configuration and less frequent use of them for documentation (for instance, detailed instructions, user guides) as compared with the past. 
+
+But in our text editor we have added extra features such as auto completation of word and sentences,compiling of java and c files and error searching option from internet while an error occured during a c or java file compilation.
+\section{Motivation}
+%write from here
+%edit misspelling word
+
+Most of the text editors these days do not have the feature of auto completation of word and sentences. so users have to type the same thing over and over again, which is time consuming and not user friendly. To make the user experience better we have added this features. We have also provided the oportunity to compile code from our text editor because text editors are also used for coding and running them from terminal or command promt is boring and also time consuming because users have go back and forth to terminal and text editor.
+\section{Objectives}
+%write from here
+The main objective of our text editor is to make user experience better. It will save a lot of time of a user by providing suggestion for completing a sentence, by autocompletation of word.It will also work as the IDE of c, c++, java, python, LaTeX language because an user will be able to compile a c,c++,java,python,LaTex file from the text editor by clicking a compile button. We have also included searching option the solution of error which occur during compilation of a language. So users don't have to go to the browser and type the error himself and get suggestion from stackoverflow through data connection .
+
+\section{Project Features}
+%write from here
+\begin{enumerate}
+\item Open files.
+\item Save files.
+\item Copy files.
+\item Paste files.
+\item Delete files.
+\item Syntax provided for:
+\begin{itemize}
+\item C
+\item C++
+\item Java
+\item Assembly language
+\item Python
+\item LaTeX
+\end{itemize}
+\item Auto Completation of word.
+\item Suggestion provided for completation of sentences.
+\item User can compile language such as
+\begin{itemize}
+\item C
+\item C++
+\item Java
+\item Python
+\item LaTeX
+\end{itemize}
+\item Suggestion provider when an error occured compiling a file
+\item Browser Integration
+\end{enumerate} 
+\section{}
+\section{Team Member Responsibilities}
+Md. Al-helal have implemented textpad features with strategy, factory method and Singlton patterns.
+Md. Inzamam have implemented suggestion features with adapter and comamnd patters.
+Md. Toukir Ahmed design the whole features and have contribution in command pattern and factory patters.
+%write from here
+\section{System Architecture}
+\begin{itemize}
+\item JDK 8.0 or above
+\item Supported on Windows, Linux and MAC
+\item Minimum 2GB RAM required
+\item Minimum Memory 100MB  
+\end{itemize}
+%write from here
+\section{Platform, Library \& Tools}
+We have used Java Platform to implement our text editor. We have used JavaFx library for developing our project.This project has all the frames prepared in Javafx.JavaFx offers stronger and manageable GUI components as compared to Swing and AWT. Modern Java GUI is represented by JAvaFx.We have also used FXMisc RichTextFX using maven dependency and Jsoup library.The tools we have used to implement the text editor is IntelliJ IDEA IDE. 
+%write from here
+\section{Limitations}
+%write from here
+\begin{itemize}
+\item Data Connection is  needed to get suggestion.
+\item Offline Suggestion are not added this version.
+\item Exact Suggestion limit is not fixed and also be improved in future.
+\item Autocomplete features are not fully implemented.
+\item Several features are not implemented in Textpad like font change,font size etc.
+\item Supports encoding="UTF-8".
+\item Response time is slow.
+\end{itemize}
+\section{Class Diagram}
+\includepdf{combined.pdf}
+%write from here
+\section{Use Cases}
+%write from here
+ \includegraphics[width=\linewidth]{USECASE.png}
+  
+  \label{fig:USECASE}
+section{Pattern Used}
+\begin{itemize}
+\item Singleton
+\item Strategy
+\item Factory
+\item Adapter
+\item Command
+\end{itemize}
+%write from here
+\section{Screenshots}
+%write from here
+ \includegraphics[width=\linewidth]{SDP/1.png}
+  
+  \label{fig:1}
+  
+   \includegraphics[width=\linewidth]{SDP/2.png}
+  
+  \label{fig:2}
+   \includegraphics[width=\linewidth]{SDP/3.png}
+  
+  \label{fig:3}
+   \includegraphics[width=\linewidth]{SDP/4.png}
+  
+  \label{fig:4}
+   \includegraphics[width=\linewidth]{SDP/c.png}
+  
+  \label{fig:c}
+   \includegraphics[width=\linewidth]{SDP/Screenshot_from_2017-11-04_07-47-02.png}
+  
+  \label{fig:5}
+  
+  \includegraphics[width=\linewidth]{SDP/latex.png}
+  
+  \label{fig:7}
+  \includegraphics[width=\linewidth]{SDP/python.png}
+  
+  \label{fig:8}
+
+  \includegraphics[width=\linewidth]{SDP/suggestions.png}
+  
+  \label{fig:10}
+    \includegraphics[width=\linewidth]{SDP/Screenshot_from_2017-11-04_07-54-47.png}
+  
+  \label{fig:6}
+    \includegraphics[width=\linewidth]{SDP/sug2.png}
+  
+  \label{fig:9}
+\section{Conclusions}
+%write from here
+We have tried to implement various kind of design pattern through this project and learnt about various kind of design pattern. Finding various design pattern to implement our project was a bit difficult but we have successfully applied them in our project. In spite of tremendous hard work we had a lot of fun during this project. We have faced many difficulties to implement the project but we have overcome them successfully. 
+\section{Future Plan}
+%write from here
+\begin{itemize}
+\item Some features are not implemented we will complete them in future.
+\item We will convert our application into web app.
+\item Now our app gives only online error suggestion. We will make it offline.
+\item Language behavior will be improved in future.
+\end{itemize}
+\section*{References}
+%write from here
+\begin{itemize}
+\item Head First Design Patterns by  Bert Bates, Kathy Sierra, Eric Freeman, Elisabeth Robson
+\item http://fxmisc.github.io/richtext/javadoc/0.8.0/org/fxmisc/richtext/package-tree.html
+\item https://docs.oracle.com/javase/8/javafx
+\item https://www.tutorialspoint.com/designpattern/
+\item https://www.google.com
+\item https://www.stackoverflow.com
+\item https://www.youtube.com
+\item we would specialy thank our honourable course teachers for their continuous guidance and suggestions. 
+
+\end{itemize}
+\end{document}
