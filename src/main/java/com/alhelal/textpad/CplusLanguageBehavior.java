@@ -15,9 +15,7 @@ public class CplusLanguageBehavior implements LanguageBehavior
 {
     public volatile static CplusLanguageBehavior uniqueInstance;
 
-    private CplusLanguageBehavior()
-    {
-    }
+    private CplusLanguageBehavior(){}
 
     public static CplusLanguageBehavior getUniqueInstance()
     {
@@ -77,13 +75,7 @@ public class CplusLanguageBehavior implements LanguageBehavior
         }
     }
 
-    public void setHighlightableText()
-    {
+    public void setHighlightableText(){}
 
-    }
-
-    public void setAutoCompletableText()
-    {
-
-    }
+    public void setAutoCompletableText(){}
 }

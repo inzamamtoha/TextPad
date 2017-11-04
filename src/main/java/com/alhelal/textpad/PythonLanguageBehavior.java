@@ -13,9 +13,7 @@ public class PythonLanguageBehavior implements LanguageBehavior
 {
     public volatile static PythonLanguageBehavior uniqueInstance;
 
-    private PythonLanguageBehavior()
-    {
-    }
+    private PythonLanguageBehavior(){}
 
     public static PythonLanguageBehavior getUniqueInstance()
     {
@@ -75,15 +73,8 @@ public class PythonLanguageBehavior implements LanguageBehavior
     }
 
     @Override
-    public void setHighlightableText()
-    {
-
-    }
+    public void setHighlightableText(){}
 
     @Override
-    public void setAutoCompletableText()
-    {
-
-    }
-
+    public void setAutoCompletableText(){}
 }

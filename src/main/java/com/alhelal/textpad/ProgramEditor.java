@@ -23,9 +23,6 @@ import java.util.Collections;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * @author alhelal
- */
 public class ProgramEditor implements Editable
 {
     private final Pattern PATTERN;
@@ -56,7 +53,6 @@ public class ProgramEditor implements Editable
                 KEYWORDS[i] = line;
                 i++;
             }
-
         }
         catch (IOException io)
         {
@@ -168,7 +164,6 @@ public class ProgramEditor implements Editable
                                     intellisense.getSelectedItem() + " ");
                             code.requestFollowCaret();
 
-
                         }
                         else if (event.getCode().equals(KeyCode.ESCAPE))
                         {
@@ -179,11 +174,10 @@ public class ProgramEditor implements Editable
         );
 
         code.richChanges()
-                .filter(ch -> !ch.getInserted().equals(ch.getRemoved())) // XXX
+                .filter(ch -> !ch.getInserted().equals(ch.getRemoved()))
                 .subscribe(change -> {
                     code.setStyleSpans(0, computeHighlighting(code.getText()));
                 });
-
     }
 
 
@@ -226,8 +220,6 @@ public class ProgramEditor implements Editable
         currentWord.caretPosition = txt.getText().length();
         currentWord.startPosition = 0;
         return txt.getText();
-
-
     }
 
     public CodeArea getEditArea()
@@ -237,21 +229,14 @@ public class ProgramEditor implements Editable
 
     public String assemble()
     {
-        //String[] options = new String(){"/usr/bin/nasm","-f","elf64",filename.toString()};
         return "";
     }
 
     @Override
-    public void setHighlightableText()
-    {
-
-    }
+    public void setHighlightableText(){}
 
     @Override
-    public void setAutoCompletableText()
-    {
-
-    }
+    public void setAutoCompletableText(){}
 
     class WordInDocument
     {
@@ -266,5 +251,4 @@ public class ProgramEditor implements Editable
             startPosition = 0;
         }
     }
-
 }

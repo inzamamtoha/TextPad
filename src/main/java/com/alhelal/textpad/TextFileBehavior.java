@@ -11,9 +11,7 @@ public class TextFileBehavior implements LanguageBehavior
 {
     private volatile static TextFileBehavior uniqueInstance;
 
-    private TextFileBehavior()
-    {
-    }
+    private TextFileBehavior(){}
 
     public static TextFileBehavior getUniqueInstance()
     {
@@ -34,7 +32,6 @@ public class TextFileBehavior implements LanguageBehavior
     public BufferedReader runCode(File file)
     {
         System.out.println("I am text file. No need to compile");
-//        return new BufferedReader(null);
         return null;
     }
 
@@ -46,14 +43,8 @@ public class TextFileBehavior implements LanguageBehavior
     }
 
     @Override
-    public void setHighlightableText()
-    {
-
-    }
+    public void setHighlightableText(){}
 
     @Override
-    public void setAutoCompletableText()
-    {
-
-    }
+    public void setAutoCompletableText(){}
 }

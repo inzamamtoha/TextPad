@@ -25,17 +25,13 @@ public class EditableFile
     File file;
     Tab tab;
 
-    public EditableFile()
-    {
-    }
+    public EditableFile(){}
 
     public void saveFile(ArrayList<EditableFile> editableFileArrayList)
     {
         File file;
         String filePath;
         System.out.println("in saveFile");
-        //savefile.getExtensionFilters().add(new FileChooser.ExtensionFilter("Assembly Files", "*.asm"));
-        //I change this portion
         System.out.println("saveFile called");
         if (options == null)
         {
@@ -65,14 +61,9 @@ public class EditableFile
         {
             file = editableFileArrayList.get(i).file;
         }
-        // Set the new title of the window
-        // setTitle(file.getName() + " | " + SimpleJavaTextEditor.NAME);
-        // Create a buffered writer to write to a file
         try
         {
-            //BufferedWriter out = new BufferedWriter(new FileWriter(file.getPath()));
             FileWriter fileWriter = new FileWriter(file);
-            //System.out.println(file.getPath());
             // Write the contents of the CodeArea to the file
             options.output = new Actions().getCodeAreaFromTab(options.centerPane.getSelectionModel().getSelectedItem());
             fileWriter.write(options.output.getText());

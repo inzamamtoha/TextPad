@@ -19,9 +19,7 @@ public class CLanguageBehavior implements LanguageBehavior
     BufferedReader stdErr;
     int maxAnswer = 5;
 
-    private CLanguageBehavior()
-    {
-    }
+    private CLanguageBehavior(){}
 
     public static CLanguageBehavior getUniqueInstance()
     {
@@ -44,7 +42,7 @@ public class CLanguageBehavior implements LanguageBehavior
         String objectFilePath = file.getParent() + "/" + objectFileName;
         if (buildCode(file) != null)
         {
-            BufferedReader stdInput;// = new BufferedReader(null);
+            BufferedReader stdInput;
             try
             {
                 Process process = Runtime.getRuntime().exec(objectFilePath);
@@ -53,7 +51,6 @@ public class CLanguageBehavior implements LanguageBehavior
                 if (stdErr != null)
                 {
                     System.out.println("suggest called");
-                   // suggest();
                 }
                 return stdInput;
             }
@@ -96,7 +93,7 @@ public class CLanguageBehavior implements LanguageBehavior
             if (stdErr != null)
             {
                 System.out.println("suggest called");
-                suggest();
+                //suggest();
             }
             return stdInput;
         }
@@ -107,22 +104,14 @@ public class CLanguageBehavior implements LanguageBehavior
         }
     }
 
-    public void setHighlightableText()
-    {
+    public void setHighlightableText(){}
 
-    }
-
-    public void setAutoCompletableText()
-    {
-
-    }
+    public void setAutoCompletableText(){}
 
     public void suggest()
     {
         SuggestionInterfaces suggestionInterfaces = new suggestionAdapter();
         suggestionInterfaces.showSuggestion(stdErr, maxAnswer);
-        //SuggestionPanel suggestionPanel = new SuggesttionPanel();
-        //suggestionPanel.();
         System.out.println("btn suggest");
     }
 }

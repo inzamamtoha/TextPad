@@ -20,10 +20,6 @@ public class TextPad extends Application
         options = Options.getUniqueInstance();
 
     }
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args)
     {
         launch(args);
@@ -38,8 +34,7 @@ public class TextPad extends Application
         actions = new Actions(options, primaryStage);
         actions.setActions();
         options.scene.getStylesheets().add(
-                getClass().getResource("/com/alhelal/resource/java-keywords.css").toExternalForm());
+                getClass().getResource("/com/alhelal/resource/keywords.css").toExternalForm());
         primaryStage.show();
-        //primaryStage.setOnHiding(evt -> intellisense.hide());
     }
 }

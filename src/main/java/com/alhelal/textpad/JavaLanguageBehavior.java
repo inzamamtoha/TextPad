@@ -15,9 +15,7 @@ public class JavaLanguageBehavior implements LanguageBehavior
 {
     public volatile static JavaLanguageBehavior uniqueInstance;
 
-    private JavaLanguageBehavior()
-    {
-    }
+    private JavaLanguageBehavior(){}
 
     public static JavaLanguageBehavior getUniqueInstance()
     {
@@ -84,13 +82,7 @@ public class JavaLanguageBehavior implements LanguageBehavior
         }
     }
 
-    public void setHighlightableText()
-    {
+    public void setHighlightableText(){}
 
-    }
-
-    public void setAutoCompletableText()
-    {
-
-    }
+    public void setAutoCompletableText(){}
 }

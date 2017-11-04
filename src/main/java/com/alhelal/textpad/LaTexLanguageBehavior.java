@@ -15,9 +15,7 @@ public class LaTexLanguageBehavior implements LanguageBehavior
 {
     public volatile static LaTexLanguageBehavior uniqueInstance;
 
-    private LaTexLanguageBehavior()
-    {
-    }
+    private LaTexLanguageBehavior(){}
 
     public static LaTexLanguageBehavior getUniqueInstance()
     {
@@ -93,13 +91,7 @@ public class LaTexLanguageBehavior implements LanguageBehavior
         }
     }
 
-    public void setHighlightableText()
-    {
+    public void setHighlightableText(){}
 
-    }
-
-    public void setAutoCompletableText()
-    {
-
-    }
+    public void setAutoCompletableText(){}
 }

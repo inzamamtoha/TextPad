@@ -11,7 +11,6 @@ import java.io.File;
 
 public class FileFactory
 {
-    //VBox(new TextArea())).setOrientation(Orientation.VERTICAL))));
     public EditableFile createFile(File file, Options options, Tab tab)
     {
         if (file == null)

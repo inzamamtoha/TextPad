@@ -16,9 +16,6 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-/**
- * @author alhelal
- */
 public class Intellisense
 {
 
@@ -26,32 +23,12 @@ public class Intellisense
     private VBox root;
     private ListView<String> lstIntelliSense;
     private ObservableList<String> keywords = FXCollections.observableArrayList();
-    /*
-            "abstract", "assert", "boolean", "break", "byte",
-            "case", "catch", "char", "class", "const",
-            "continue", "default", "do", "double", "else",
-            "enum", "extends", "final", "finally", "float",
-            "for", "goto", "if", "implements", "import",
-            "instanceof", "int", "interface", "long", "native",
-            "new", "package", "private", "protected", "public",
-            "return", "short", "static", "strictfp", "super",
-            "switch", "synchronized", "this", "throw", "throws",
-            "transient", "try", "void", "volatile", "while"
-    );*/
     private Boolean showing;
-/*
-    public Intellisense(String s)
-    {
-        this();
-        selectItem(s);
-    }*/
-
     public Intellisense(String keywordsPaht)
     {
         try
         {
             String line = null;
-            //BufferedReader bufferedReader = new BufferedReader(new FileReader(new File("src/main/java/com/alhelal/resource/CplusKeywords")));
             BufferedReader bufferedReader = new BufferedReader(new FileReader(new File(keywordsPaht)));
             while ((line = bufferedReader.readLine()) != null)
             {
@@ -92,7 +69,6 @@ public class Intellisense
             ex.printStackTrace();
         }
     }
-
 
     public void goDown()
     {

@@ -24,9 +24,6 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * @author alhelal
- */
 public class NormalTextEditor implements Editable
 {
     private static final Set<String> dictionary = new HashSet<String>();
@@ -41,7 +38,6 @@ public class NormalTextEditor implements Editable
 
         try
         {
-//            InputStream input = getClass().getResourceAsStream("spellchecking.dict");
             InputStreamReader input = new InputStreamReader(new FileInputStream(keywordsPaht));
             BufferedReader br = new BufferedReader(input);
             {
@@ -56,9 +52,6 @@ public class NormalTextEditor implements Editable
         {
             e.printStackTrace();
         }
-
-        // load the sample document
-        //InputStream input2 = getClass().getResourceAsStream("spellchecking.txt");
         code = new CodeArea();
         editorPane = new VirtualizedScrollPane(code);
 
@@ -66,10 +59,8 @@ public class NormalTextEditor implements Editable
         setCodeAreaProperties(parent);
     }
 
-
     private static StyleSpans<Collection<String>> computeHighlighting(String text)
     {
-
         StyleSpansBuilder<Collection<String>> spansBuilder = new StyleSpansBuilder<>();
 
         BreakIterator wb = BreakIterator.getWordInstance();
@@ -129,7 +120,6 @@ public class NormalTextEditor implements Editable
                     intellisense.hide();
                 }
             }
-
             catch (Exception ex)
             {
                 intellisense.hide();
@@ -153,8 +143,6 @@ public class NormalTextEditor implements Editable
                             code.replaceText(currentWord.startPosition, currentWord.caretPosition,
                                     intellisense.getSelectedItem() + " ");
                             code.requestFollowCaret();
-
-
                         }
                         else if (event.getCode().equals(KeyCode.ESCAPE))
                         {
@@ -163,9 +151,8 @@ public class NormalTextEditor implements Editable
                     }
                 }
         );
-
         code.richChanges()
-                .filter(ch -> !ch.getInserted().equals(ch.getRemoved())) // XXX
+                .filter(ch -> !ch.getInserted().equals(ch.getRemoved()))
                 .subscribe(change -> {
                     code.setStyleSpans(0, computeHighlighting(code.getText()));
                 });
@@ -228,16 +215,10 @@ public class NormalTextEditor implements Editable
     }
 
     @Override
-    public void setHighlightableText()
-    {
-
-    }
+    public void setHighlightableText() {}
 
     @Override
-    public void setAutoCompletableText()
-    {
-
-    }
+    public void setAutoCompletableText() {}
 
     class WordInDocument
     {
@@ -252,5 +233,4 @@ public class NormalTextEditor implements Editable
             startPosition = 0;
         }
     }
-
 }

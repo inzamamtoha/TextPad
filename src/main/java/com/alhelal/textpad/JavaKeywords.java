@@ -114,10 +114,9 @@ public class JavaKeywords
         codeArea.replaceText(0, 0, sampleCode);
 
         Scene scene = new Scene(new StackPane(new VirtualizedScrollPane<>(codeArea)), 600, 400);
-        scene.getStylesheets().add(getClass().getResource("java-keywords.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getResource("keywords.css").toExternalForm());
         primaryStage.setScene(scene);
         primaryStage.setTitle("Java Keywords Demo");
         primaryStage.show();
     }
-
 }

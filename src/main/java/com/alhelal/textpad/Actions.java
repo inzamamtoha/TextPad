@@ -81,13 +81,10 @@ public class Actions
     {
         FileChooser openfile = new FileChooser();
         openfile.setTitle("Open File");
-        //openfile.getExtensionFilters().add(new FileChooser.ExtensionFilter("Assembly Files", "*.asm"));
         File file = openfile.showOpenDialog(options.stage);
         if (file != null)
         {
             CodeArea cd = getCodeAreaFromTab(options.centerPane.getSelectionModel().getSelectedItem());
-            //cd.replaceText(FileUtils.readFiletoString(new File(path), "UTF-8"));
-
             Tab tb = options.centerPane.getSelectionModel().getSelectedItem();
             int i = 0;
             while (editableFilesArrayList.get(i).tab.equals(tb) == false)
@@ -99,40 +96,15 @@ public class Actions
                 cd.replaceText(new String(Files.readAllBytes(Paths.get(file.getPath()))));
                 options.centerPane.getSelectionModel().getSelectedItem().setText(file.getName());
                 String name = file.getName();
-                //String[] splited;
-                //System.out.println("filename = " + name);
-                //= new String[2];
-                //splited = name.split(".");
-                //System.out.println("length =" + splited.length);
-                //String extension = FilenameUtils.getExtension(name);
-                //splited[0];
                 FileFactory fileFactory = new FileFactory();
                 FileBox fileBox = new FileBox(fileFactory);
                 editableFilesArrayList.add(i, fileBox.orderFile(file, options, tb));
 
-                //editableFile = new FileBox(fileFactory);
-
-               /* if (file.getName().endsWith("java"))
-                {
-                    editableFile = new JavaFile();
-                    System.out.println("java file detected");
-                }
-                else if (file.getName().endsWith("c"))
-                    editableFile = new CFile();
-                else if (file.getName().endsWith("cpp"))
-                    editableFile = new CplusFile();
-                else if (file.getName().endsWith("py"))
-                    editableFile = new PythonFile();
-                else
-                    editableFile = new TextFile(options);*/
-                // / editableFile.setLanguageBehavior(new JavaLanguageBehavior());
             }
             catch (Exception io)
             {
-                //   System.out.println(io);
+                 System.out.println(io);
             }
-
-            //CodeArea cd = new CodeArea();
         }
         System.out.println("open file success");
         if (editableFilesArrayList == null)
@@ -170,12 +142,10 @@ public class Actions
     private Tab addTab()
     {
         String keywordsPath = "src/main/java/com/alhelal/resource/Keywords";
-        //NormalTextEditor ed = new NormalTextEditor(primaryStage, keywordsPath);
         ProgramEditor ed = new ProgramEditor(primaryStage, keywordsPath);
         String fileName = "*Untitled";
         Tab tab = new Tab(fileName,
                 new VirtualizedScrollPane<CodeArea>(ed.getEditArea()));
-        //Tab tab = new Tab(fileName);
         tab.setOnSelectionChanged((Event event) -> {
             if (tab.isSelected())
             {
