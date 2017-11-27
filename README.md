@@ -17,3 +17,4 @@ We are doing this project as our SDP lab project. We try to use Design pattern a
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=8j7uJQBJ8IQ
 " target="_blank"><img src="http://img.youtube.com/vi/8j7uJQBJ8IQ/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+[![Watch the video](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](http://youtu.be/vt5fpE0bzSY)
