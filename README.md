@@ -10,6 +10,10 @@ We are doing this project as our SDP lab project. We try to use Design pattern a
 
 ![Preject demo](./textpad.png "Project Demo")
 
-![Project complet UML diagram](./TextPadDoc/PatternUML/UML.pdf)
+![Full Project UML diagram](./TextPadDoc/PatternUML/UML.pdf)
 
 [See our project in YouTube](https://www.youtube.com/watch?v=8j7uJQBJ8IQ&t=43s)
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=ve-jhCUMWMk
+" target="_blank"><img src="http://img.youtube.com/vi/ve-jhCUMWMk/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
