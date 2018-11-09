@@ -1,5 +1,5 @@
 # TextPad
-A text editor that predicts next word and provide code error suggestions.  
+A text editor that predicts next word and provide code error suggestions.And it also woks as an IDE of c, c+, java, python language. If there are an error on this code , there are some suggestions coming from stackoverflow(online suggestion).
 We are doing this project as our SDP lab project. We try to use Design pattern as many as possible to build the project. We have already used [Strategy Pattern](https://en.wikipedia.org/wiki/Strategy_pattern), [Singleton Pattern](https://en.wikipedia.org/wiki/Singleton_pattern), [Factory Pattern](https://en.wikipedia.org/wiki/Factory_method_pattern) 
 
 ![view Factory Method Pattern UML used here](./TextPadDoc/PatternUML/factoryMethod.pdf)
